@@ -8,77 +8,161 @@
     <title>中国互联网的发展</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./js/vue.js"></script>
     <!-- 引入样式 -->
-    <link rel="stylesheet" href="./css.css">
-   
+    <link rel="stylesheet" href="./css/css.css">
+
+    <link rel="stylesheet" href="./css/swiper.min.css">
+
 
 </head>
 
 <body>
-       
+
     <div id="app">
         <div class="daohang">
+            <img class="daohangImg" src="./img/daohangBgd.jpg">
             <div class="a_container">
                 <a href="#" @click.prevent="comName='shouye'">首页</a>
-                <a href="#" @click.prevent="comName='lishi'">历史简介</a>
-                <a href="#" @click.prevent="comName='fazhan'">发展历程</a>
-                <a href="#" @click.prevent="comName='zhuangkuang'">基本状况</a>
+                <a href="#" @click.prevent="comName='lishi'">历史</a>
+                <a href="#" @click.prevent="comName='fazhan'">发展</a>
+                <a href="#" @click.prevent="comName='zhuangkuang'">数据</a>
                 <a href="#" @click.prevent="comName='yingyong'">应用</a>
                 <a href="#" @click.prevent="comName='yingxiang'">影响</a>
                 <a href="#" @click.prevent="comName='weilai'">未来</a>
-                
+
             </div>
+           
             <select onchange="window.location=this.value;">
-                    <option>语言</option>
-                    <option value="index.html"> 中文 </option>
-                    <option value="english.html"> English</option>
+                <option>语言</option>
+                <option value="index.html"> 中文 </option>
+                <option style="border:none;" value="english.html"> English</option>
             </select>
+
         </div>
-         <div class="all">
-            <component  :is="comName" ></component>
-         </div>
+
+        <div class="all">
+
+            <keep-alive>
+                <component :is="comName"></component>
+            </keep-alive>
+        </div>
+
     </div>
-
-     <template id="shouye">
-          
-            <h1>首页</h1>
-     </template>
+    <!--首页-->
+    <template id="shouye">
 
 
+        <div class="swiper-container">
 
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                        <p>丰富多彩</p>
+                     <img  src="./img/slide6.png">
+                </div>
+                <div class="swiper-slide">
+                    <p><strong>高效</strong></p> 
+                    <img  src="./img/slide2.jpg">
+                </div>
+                <div class="swiper-slide">
+                        <p>便捷</p>
+                    <img  src="./img/slide3.jpg">
+                </div>
+                <div class="swiper-slide">
+                        <p>便捷</p>
+                        <img  src="./img/slide4.png">
+                </div>
+                <div class="swiper-slide"> 
+                     <p>便捷</p>
+                        <img  src="./img/slide5.png">
+                </div>
+                <div class="swiper-slide"> 
+                     <p>便捷</p>
+                     <img  src="./img/slide1.jpg">
+                </div>
+                <div class="swiper-slide">Slide 7
+
+                </div>
+                <div class="swiper-slide">Slide 8
+
+                </div>
+                <div class="swiper-slide">Slide 9
+
+                </div>
+                <div class="swiper-slide">Slide 10
+
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </template>
+
+
+     <!--历史简介-->
     <template id="lishi">
-            <h1>历史简介</h1>
+        <h1>历史简介</h1>
     </template>
 
 
 
     <template id="fazhan">
-            <h1>发展历程</h1>
+        <h1>发展历程</h1>
     </template>
 
 
 
     <template id="zhuangkuang">
-            <h1>基本状况</h1>
+        <h1>基本状况</h1>
     </template>
 
 
     <template id="yingyong">
-            <h1>应用</h1>
+        <h1>应用</h1>
     </template>
 
 
     <template id="yingxiang">
-            <h1>影响</h1>
+        <h1>影响</h1>
     </template>
 
 
     <template id="weilai">
-            <h1>未来</h1>
+        <h1>未来</h1>
     </template>
-   
-     <script type="text/javascript" src="js.js"></script>
+    <!--引入js.js-->
+    <script type="text/javascript" src="./js/js.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper({
+            el: '.swiper-container',
+            initialSlide: 2,
+            spaceBetween: 50,
+            slidesPerView: 2,
+            centeredSlides: true,
+            slideToClickedSlide: true,
+            grabCursor: true,
+            autoplay: true,
+           
+            mousewheel: {
+                enabled: true,
+            },
+            keyboard: {
+                enabled: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
 </body>
 
 </html>

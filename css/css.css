@@ -1,6 +1,11 @@
 /*  导航栏  */
 .daohang{
-    height: 100px;
+    height: 60px;
+    width: 100%;
+}
+.daohangImg{
+    position: absolute;
+    height: 100%;
     width: 100%;
 }
 .a_container{
@@ -9,19 +14,19 @@
     position: absolute;
     width: 100%;
     height: 60px;
-    background-color: #33415E;
+  
     display: flex;
     justify-content:center;
-    z-index: 100;
+    z-index: 1;
+   
 }
 
 a:link{
     text-decoration: none;
     color: white;
-    background-color: #33415E;
     height: 60px;
     width: 150px;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     z-index: 102;
     line-height: 60px;
@@ -32,10 +37,10 @@ a:link{
 a:visited{
     text-decoration: none;
     color: white;
-    background-color: #33415E;
+  
     height: 100px;
     width: 100px;
-    font-size: 20px;
+    font-size: 15px;
     z-index: 999;
 }
 a:hover{
@@ -44,23 +49,33 @@ a:hover{
    
     height: 60px;
     width: 150px;
-    font-size: 20px;
+    font-size: 18px;
     
     background-color: #94874e;  
 
 }
 select{
     position: absolute;
-    color: white;
+   background-color: #00000000;
+   color: white;
     right: 30px;
     height: 30px;
     width: 80px;
-    background-color: #33415E;
+    background-color: none;
     z-index: 998;
     top: 15px;
     border: none;
     outline: none;
     border-bottom: solid 1px #4FC3F7;
+    padding: 0;
+}
+option{
+    background: #33415e;
+    color: white;
+    outline: none;
+    border:none;
+    padding: 0;
+    margin: 0;
 }
 
 /* 临时 组件 */

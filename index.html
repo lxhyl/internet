@@ -21,11 +21,12 @@
 
     <div id="app">
         <div class="daohang">
+            <img class="daohangImg" src="./img/daohangBgd.jpg">
             <div class="a_container">
                 <a href="#" @click.prevent="comName='shouye'">首页</a>
-                <a href="#" @click.prevent="comName='lishi'">历史简介</a>
-                <a href="#" @click.prevent="comName='fazhan'">发展历程</a>
-                <a href="#" @click.prevent="comName='zhuangkuang'">基本状况</a>
+                <a href="#" @click.prevent="comName='lishi'">历史</a>
+                <a href="#" @click.prevent="comName='fazhan'">发展</a>
+                <a href="#" @click.prevent="comName='zhuangkuang'">数据</a>
                 <a href="#" @click.prevent="comName='yingyong'">应用</a>
                 <a href="#" @click.prevent="comName='yingxiang'">影响</a>
                 <a href="#" @click.prevent="comName='weilai'">未来</a>
@@ -35,16 +36,18 @@
             <select onchange="window.location=this.value;">
                 <option>语言</option>
                 <option value="index.html"> 中文 </option>
-                <option value="english.html"> English</option>
+                <option style="border:none;" value="english.html"> English</option>
             </select>
 
         </div>
+
         <div class="all">
 
             <keep-alive>
                 <component :is="comName"></component>
             </keep-alive>
         </div>
+
     </div>
     <!--首页-->
     <template id="shouye">
