@@ -7,6 +7,15 @@
     position: absolute;
     height: 100%;
     width: 100%;
+    
+}
+.logo{
+    position: absolute;
+    top: 0;
+    height: 60px;
+ 
+    left: 100px;
+    z-index: 999;
 }
 .a_container{
     top: 0;
@@ -25,7 +34,7 @@
     text-decoration: none;
     color: white;
     height: 60px;
-    width: 150px;
+    width: 130px;
     font-size: 15px;
     text-align: center;
     z-index: 102;
@@ -46,9 +55,8 @@
 .a_container a:hover{
     text-decoration: none;
     color: white;
-   
     height: 60px;
-    width: 150px;
+    width: 130px;
     font-size: 18px;
     
     background-color: #94874e;  
@@ -140,7 +148,9 @@ html {
   position: absolute;
   width: 1100px;
   height: 1000px;
-  left: 15%;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .thingsBgd{
     position: absolute;
@@ -175,11 +185,11 @@ html {
      width: 460px;
      height: 150px;
      border-bottom: #94874e solid 1px;
-     opacity: 0.2;
+    
      
 }
 .shouye_shijian_one:hover{
-    opacity: 1;
+  background-color: #cbc6af;
 }
 .shouye_shijian_two{
     position: relative;
@@ -187,11 +197,11 @@ html {
     width: 460px;
     height: 150px;
     border-bottom: #94874e solid 1px;
-    opacity: 0.2;
+   
     
 }
 .shouye_shijian_two:hover{
-    opacity: 1;
+    background-color: #cbc6af;
 }
 .left_img{
   position: absolute;
@@ -238,6 +248,7 @@ html {
     width: 60px;
     height: 20px;
     border-bottom: #94874e solid 2px;
+    z-index: 999;
 }
 .timeRight{
     position: absolute;
@@ -248,6 +259,8 @@ html {
     width: 60px;
     height: 20px;
     border-bottom: #94874e solid 2px;
+    z-index: 999;
+
 }
 .time_1{top: 125px; }
 .time_2{ top:150px;}
@@ -308,12 +321,13 @@ html {
      width: 460px;
      height: 150px;
      border-bottom: #94874e solid 1px;
-     opacity: 0.2;
+  
      
 }
 .shouye_shijian_right:hover{
-    opacity: 1;
+  background: #cbc6af;
 }
+
 footer{
     position: absolute;
     top: 1360px;
@@ -335,16 +349,7 @@ footer{
     height: 100%;
     z-index: 999;
 }
-.footerAll a:link{
-    text-decoration: none;
-    color: black;
-    height: 20px;
-    
-    font-size: 10px;
-    text-align: center;
-    z-index: 999;
-    line-height: 20px;
-}
+
 .callUs{
     position: absolute;
     left: 200px;
@@ -377,4 +382,21 @@ footer{
  height: 25px;
  margin: auto;
  bottom: 10px;
+}
+.buttom_buttom{
+    position: absolute;
+    top: 1460px;
+    height: 30px;
+    width: 100%;
+    background-color: #33415e;
+}
+.buttom_buttom a:link{
+    text-decoration: none;
+    color: black;
+    height: 30px;
+    
+    font-size: 10px;
+    text-align: center;
+    z-index: 999;
+    line-height: 30px;
 }
