@@ -3,7 +3,7 @@
 
 <head>
 
-    <link rel="icon" href="Images/favicon.ico" />
+
     <link rel="shortcut icon" href="img/icon.ico" />
     <title>中国互联网的发展</title>
     <meta charset="utf-8">
@@ -21,6 +21,7 @@
 
     <div id="app">
         <div class="daohang">
+            <img class="logo" src="./img/log2.jpg">
             <img class="daohangImg" src="./img/daohangBgd.jpg">
             <div class="a_container">
                 <a href="#" @click.prevent="comName='shouye'">首页</a>
@@ -32,7 +33,7 @@
                 <a href="#" @click.prevent="comName='weilai'">未来</a>
 
             </div>
-           
+
             <select onchange="window.location=this.value;">
                 <option>语言</option>
                 <option value="index.html"> 中文 </option>
@@ -51,57 +52,225 @@
     </div>
     <!--首页-->
     <template id="shouye">
+        <div>
 
 
-        <div class="swiper-container">
 
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
+            <div class="swiper-container">
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <p>丰富多彩</p>
-                     <img  src="./img/slide6.png">
-                </div>
-                <div class="swiper-slide">
-                    <p><strong>高效</strong></p> 
-                    <img  src="./img/slide2.jpg">
-                </div>
-                <div class="swiper-slide">
+                        <img src="./img/slide6.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <p><strong>高效</strong></p>
+                        <img src="./img/slide2.jpg">
+                    </div>
+                    <div class="swiper-slide">
                         <p>便捷</p>
-                    <img  src="./img/slide3.jpg">
-                </div>
-                <div class="swiper-slide">
+                        <img src="./img/slide3.jpg">
+                    </div>
+                    <div class="swiper-slide">
                         <p>便捷</p>
-                        <img  src="./img/slide4.png">
+                        <img src="./img/slide4.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <p>便捷</p>
+                        <img src="./img/slide5.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <p>便捷</p>
+                        <img src="./img/slide1.jpg">
+                    </div>
+                    <div class="swiper-slide">Slide 7
+
+                    </div>
+                    <div class="swiper-slide">Slide 8
+
+                    </div>
+                    <div class="swiper-slide">Slide 9
+
+                    </div>
+                    <div class="swiper-slide">Slide 10
+
+                    </div>
                 </div>
-                <div class="swiper-slide"> 
-                     <p>便捷</p>
-                        <img  src="./img/slide5.png">
-                </div>
-                <div class="swiper-slide"> 
-                     <p>便捷</p>
-                     <img  src="./img/slide1.jpg">
-                </div>
-                <div class="swiper-slide">Slide 7
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+            <img class="middleBgd" src="./img/未标题-1.jpg">
+
+
+            <div class="things">
+
+                <img class="thingsBgd" src="./img/thingsBgd.png">
+
+                <div class="jindutiaoContainer">
 
                 </div>
-                <div class="swiper-slide">Slide 8
+                <div class="thingsLeft">
+                    <div @mouseenter="change1" @mouseleave="leave1" class="shouye_shijian_one">
+                        <img class="left_img" src="./img/第一封邮件.jpg">
+                        <p class="left_alt">第一封邮件</p>
+                        <p class="left_title">电子邮件</p>
+                        <p class="left_info">
+                            中国科学家在北京计算机应用技术研究所（ICA）建成一个电子邮件节点，
+                            用英文和德文向德国发出了中国第一封电子邮件。</p>
+
+                    </div>
+                    <div @mouseenter="change2" @mouseleave="leave2" class="shouye_shijian_two">
+                        <img class="left_img" src="./img/shijian_qq.jpg">
+                        <p class="left_alt">社交</p>
+                        <p class="left_title">QQ</p>
+                        <p class="left_info">
+                            1999年，腾讯发布了QQ的第一版，当时还不叫QQ，叫OICQ。这是社交软件的兴起</p>
+
+                    </div>
+                    <div @mouseenter="change3" @mouseleave="leave3" class="shouye_shijian_two">
+                        <img class="left_img" src="./img/wangyou.jpg">
+                        <p class="left_alt">梦幻西游</p>
+                        <p class="left_title">游戏</p>
+                        <p class="left_info">
+                            2000年之后，中国互联网进入了“网游时代”。从最早的《万王之王》、《石器时代》到《传奇》、《梦幻西游》、《魔兽世界》，再到无数形形色色的后来者，网络游戏在一定程度上改变了中国人对互联网的认知。而中国网络游戏的兴起与繁荣，既是必然也有偶然。
+                        </p>
+
+                    </div>
+                    <div @mouseenter="change4" @mouseleave="leave4" class="shouye_shijian_two">
+                        <img class="left_img" src="./img/xiongmao.jpg">
+                        <p class="left_alt">熊猫烧香</p>
+                        <p class="left_title">病毒</p>
+                        <p class="left_info">
+                            最有名的“本土”病毒当属2006年10月爆发的蠕虫病毒“熊猫烧香”了。这种病毒能终止大量反病毒软件和防火墙的运行，造成系统核心程序加载失败，并且删除重要文件。不过很萌的是，中毒之后，计算机主界面上会出现一个举着三根香的虔诚的熊猫。
+                        </p>
+
+                    </div>
+                    <div @mouseenter="change5" @mouseleave="leave5" class="shouye_shijian_two">
+                        <img class="left_img" src="./img/qq.jpg">
+                        <p class="left_alt">通知</p>
+                        <p class="left_title">3Q大战</p>
+                        <p class="left_info">
+                            　腾讯进军互联网安全领域，与360之间的战争不可避免地爆发了。而双方的战火，波及到了大量无辜群众。11月5日，工信部、互联网协会等部门紧急出面，用行政命令的方式要求双方立即结束纷争。
+                        </p>
+
+                    </div>
+                    <div @mouseenter="change6" @mouseleave="leave6" class="shouye_shijian_two">
+                        <img class="left_img" src="./img/share.jpg">
+                        <p class="left_alt">共享单车</p>
+                        <p class="left_title">共享经济</p>
+                        <p class="left_info">
+                            真正让共享经济走进日常生活，成为资本宠儿的是2016年下半年开始兴起的共享单车。摩拜、ofo两强争霸，小蓝、小鸣、永安行诸强林立的局面。手机下单，随叫随走，价格低廉，共享单车成为了许多市民出行的首选，也成了令外国人羡慕的“中国新四大发明”。
+                        </p>
+
+                    </div>
 
                 </div>
-                <div class="swiper-slide">Slide 9
 
-                </div>
-                <div class="swiper-slide">Slide 10
+                <div class="timeLeft time_1">1987.9.14</div>
 
+                <span v-bind:style="spanBgd1" class="circle span_1 "></span>
+
+                <div class="timeRight time_2">1992.4.20</div>
+
+                <div class="timeLeft time_3">1999</div>
+
+                <span v-bind:style="spanBgd2" class="circle span_2"></span>
+
+                <div class="timeRight time_4">2001.1</div>
+
+                <div class="timeLeft time_5">2000~</div>
+
+                <span v-bind:style="spanBgd3" class="circle span_3"></span>
+
+                <div class="timeRight time_6">2003.5.10</div>
+
+                <div class="timeLeft time_7">2006.10~</div>
+
+                <span v-bind:style="spanBgd4" class="circle span_4"></span>
+
+                <div class="timeRight time_8">2009.7~</div>
+
+                <div class="timeLeft time_9">2010.9.22</div>
+
+                <span v-bind:style="spanBgd5" class="circle span_5"></span>
+
+                <div class="timeRight time_10">2014~</div>
+
+                <div class="timeLeft time_11">2016.6~</div>
+
+                <span v-bind:style="spanBgd6" class="circle span_6"></span>
+
+                <div class="timeRight time_12">2018~</div>
+
+
+
+
+                <div class="thingsRight">
+                    <div @mouseenter="change1" @mouseleave="leave1" class="shouye_shijian_right">
+                        <img class="left_img" src="./img/拨号上网.png">
+                        <p class="left_alt">拨号上网</p>
+                        <p class="left_title">拨号上网</p>
+                        <p class="left_info">
+                            使互联网从象牙塔走进百姓家的，是1994年4月20日中国实现了与国际互联网的第一条TCP/IP全功能链接。第二年一月，邮电部电信总局分别在北京、上海设立通过美国Sprint公司接入美国的64K专线，开始向社会提供互联网接入服务。
+                        </p>
+
+                    </div>
+                    <div @mouseenter="change2" @mouseleave="leave2" class="shouye_shijian_right">
+                        <img class="left_img" src="./img/baidu.jpg">
+                        <p class="left_alt">百度</p>
+                        <p class="left_title">搜索引擎</p>
+                        <p class="left_info">
+                            百度，2000年1月由李彦宏创立于北京中关村，致力于向人们提供“简单，可依赖”的信息获取方式。目前是全球最大的中文搜索引擎。</p>
+
+                    </div>
+                    <div @mouseenter="change3" @mouseleave="leave3" class="shouye_shijian_right">
+                        <img class="left_img" src="./img/taobao.jpg">
+                        <p class="left_alt">淘宝</p>
+                        <p class="left_title">购物</p>
+                        <p class="left_info">
+                            2003年5月10日，淘宝网诞生于浙江杭州的湖畔花园，2006年，淘宝网成为亚洲最大购物网站</p>
+
+                    </div>
+                    <div @mouseenter="change4" @mouseleave="leave4" class="shouye_shijian_right">
+                        <img class="left_img" src="./img/weibo.jpg">
+                        <p class="left_alt">微博</p>
+                        <p class="left_title">微博</p>
+                        <p class="left_info">
+                            2009年下半年开始，各大门户网站开通或测试微博功能。自2009年8月上线以来，微博成为新浪最具想象力的新业务平台。新浪微博迅速成为社会化媒体平台一枝独秀的领跑者</p>
+
+                    </div>
+                    <div @mouseenter="change5" @mouseleave="leave5" class="shouye_shijian_right">
+                        <img class="left_img" src="./img/didi.jpg">
+                        <p class="left_alt">滴滴打车</p>
+                        <p class="left_title">出行</p>
+                        <p class="left_info">
+                            2014年上半年，“滴滴打车”和“快的打车”为了抢占市场，疯狂发放红包和补贴，仅仅4个月时间就烧掉了近24亿人民币。事实上，这场烧钱大战的背后，正是互联网巨头腾讯和阿里在新兴的移动支付领域的殊死搏斗。
+                        </p>
+
+                    </div>
+
+                    <div @mouseenter="change6" @mouseleave="leave6" class="shouye_shijian_right">
+                        <img class="left_img" src="./img/cloud.jpg">
+                        <p class="left_alt">云计算</p>
+                        <p class="left_title">云计算</p>
+                        <p class="left_info">
+                            云计算（cloud
+                            computing）是分布式计算的一种，指的是通过网络“云”将巨大的数据计算处理程序分解成无数个小程序，然后，通过多部服务器组成的系统进行处理和分析这些小程序得到结果并返回给用户。
+                        </p>
+
+                    </div>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
+
 
         </div>
     </template>
 
 
-     <!--历史简介-->
+    <!--历史简介-->
     <template id="lishi">
         <h1>历史简介</h1>
     </template>
@@ -132,10 +301,30 @@
     <template id="weilai">
         <h1>未来</h1>
     </template>
-    <!--引入js.js-->
+    <footer>
+        <img class="footer_bgd" src="./img/footer_bgd.jpg">
+        <div class="footerAll">
+
+            <div class="callUs">
+
+                <span>联系我们</span>
+                <a href="mailto:3529725395@qq.com"><img class="callusimg" src="./img/mailUs.png"></a>
+                 
+            </div>
+           <div class="aboutUs"><a href="https://github.com/zpfnb/internet/blob/master/README.md" target="_blank">关于我们</a></div>
+          <div class="item_site"><img src="./img/github.png"></img><a href="https://github.com/zpfnb/internet" target="_blank">Github</a></div>
+        </div>
+
+    </footer>
+    <div class="buttom_buttom">
+
+            <a class="beian" href="http://www.miitbeian.gov.cn" target="_blank">桂ICP备18010807号</a>
+    </div>
+    <!--引入js.js，swiper.js-->
     <script type="text/javascript" src="./js/js.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script>
+
         var swiper = new Swiper({
             el: '.swiper-container',
             initialSlide: 2,
@@ -145,7 +334,7 @@
             slideToClickedSlide: true,
             grabCursor: true,
             autoplay: true,
-           
+
             mousewheel: {
                 enabled: true,
             },

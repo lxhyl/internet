@@ -349,7 +349,15 @@ footer{
     height: 100%;
     z-index: 999;
 }
+.footerAll a:link{
+    text-decoration: none;
+    color: black;
+}
+.footerAll a:visited{
+    text-decoration: none;
+    color: #000000;
 
+}
 .callUs{
     position: absolute;
     left: 200px;
@@ -373,7 +381,47 @@ footer{
     width: 30px;
     left:0;
 }
-
+.aboutUs{
+    top: 10px;
+    position: absolute;
+    height: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0;
+    line-height: 30px;
+    width: 150px;
+    color: #000000;
+    text-align: center;
+}
+.aboutUs a:link{
+  color: #000000;
+  font-size: 12px;
+  text-align: center;
+}
+.item_site{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    width: 150px;
+    height: 50px;
+    
+    font-size: 12px;
+    
+}
+.item_site img{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+.item_site a:link{
+    position: absolute;
+    left: 35px;
+    height: 30px;
+    line-height: 30px;
+    color: #000000;
+    font-size: 12px;
+}
 .beian{
     position: absolute;
     right: 0;
@@ -382,6 +430,7 @@ footer{
  height: 25px;
  margin: auto;
  bottom: 10px;
+ text-align: center;
 }
 .buttom_buttom{
     position: absolute;
@@ -391,10 +440,15 @@ footer{
     background-color: #33415e;
 }
 .buttom_buttom a:link{
+    margin: auto;
+    bottom: 0;
+    padding: 0;
+    position: absolute;
     text-decoration: none;
-    color: black;
+    color: #9E9E9E;
     height: 30px;
-    
+    top: 0;
+    width: 150px;
     font-size: 10px;
     text-align: center;
     z-index: 999;
