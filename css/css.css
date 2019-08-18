@@ -1,4 +1,5 @@
 /*  导航栏  */
+
 .daohang{
     height: 60px;
     width: 100%;
@@ -90,7 +91,7 @@ option{
 .all{
     position: absolute;
     width: 100%;
-    top: 70px;
+    top: 60px;
 }
 
 /* 首页 swiper  */
@@ -107,6 +108,7 @@ html {
     width: 100%;
     height: 300px;
     margin: 50px auto;
+    top: 10px;
 }
 
 
@@ -207,7 +209,7 @@ html {
   position: absolute;
   height: 100px;
   width: 150px;
-  left: 20px;
+  left: 25px;
   top: 25px;
 }
 .left_alt{
@@ -242,24 +244,26 @@ html {
 .timeLeft{
     position: absolute;
    
-    text-align: center;
+    text-align: left;
     right: 552px;
     font-size: 10px;
     width: 60px;
     height: 20px;
     border-bottom: #94874e solid 2px;
-    z-index: 999;
+    z-index: 998;
 }
 .timeRight{
     position: absolute;
    
-    text-align: center;
+    text-align:right;
     left: 552px;
     font-size: 10px;
     width: 60px;
-    height: 20px;
+    height: 15px;
+    line-height: 15px;
+  
     border-bottom: #94874e solid 2px;
-    z-index: 999;
+    z-index: 998;
 
 }
 .time_1{top: 125px; }
@@ -280,6 +284,7 @@ html {
  left: 537.5px;
  height:15px;
  width: 15px;
+ z-index: 999;
  /*
  background-color: #94874e;
  border:solid #c6a300 5px;
@@ -314,10 +319,11 @@ html {
     height: 900px;
     top: 70px;
     width: 500px;
+
 }
 .shouye_shijian_right{
-    position: relative;
-    top: 10px;
+     position: relative;
+     top: 10px;
      width: 460px;
      height: 150px;
      border-bottom: #94874e solid 1px;
@@ -330,7 +336,7 @@ html {
 
 footer{
     position: absolute;
-    top: 1360px;
+    top: 1300px;
     height: 100px;
     width: 100%;
     z-index: 900;
@@ -349,14 +355,14 @@ footer{
     height: 100%;
     z-index: 999;
 }
-.footerAll a:link{
+.footerAll>a:link{
     text-decoration: none;
     color: black;
 }
-.footerAll a:visited{
-    text-decoration: none;
-    color: #000000;
 
+
+.mail_a:hover{
+    color: #ffc9bb;
 }
 .callUs{
     position: absolute;
@@ -364,22 +370,37 @@ footer{
     font-size: 12px;
     height: 100px;
     width: 150px;
-    line-height: 30px;
+   
     margin: 0;
     padding: 0;
     
 }
-.callUs span{
+.callUs>span{
     position: absolute;
-    top: 10px;
-    left: 40px;
+    top: 5px;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+
 }
 .callusimg{
     position: absolute;
-    top: 10px;
+    top: 25px;
     height: 30px;
     width: 30px;
     left:0;
+    right: 0;
+    margin: auto;
+}
+.phone{
+    position: absolute;
+   margin: 0;
+   top: 55px;
+    height: 20px;
+    width: 100%;
+ text-align: center;
 }
 .aboutUs{
     top: 10px;
@@ -394,11 +415,18 @@ footer{
     color: #000000;
     text-align: center;
 }
-.aboutUs a:link{
+.aboutUs>a:link{
+    text-decoration: none;
   color: #000000;
   font-size: 12px;
   text-align: center;
 }
+.aboutUs>a:hover{
+ color: #ffc9bb;
+}
+.aboutUs>a:visited{
+    color: #000000;
+   }
 .item_site{
     position: absolute;
     top: 10px;
@@ -414,13 +442,33 @@ footer{
   width: 30px;
   height: 30px;
 }
-.item_site a:link{
+.item_site>a:link{
+    text-decoration: none;
     position: absolute;
     left: 35px;
     height: 30px;
     line-height: 30px;
     color: #000000;
     font-size: 12px;
+}
+.item_site>a:hover{
+ color: #ffc9bb
+}
+.item_site>a:visited{
+    color: #000000;
+   }
+.banquan{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    position: absolute;
+    bottom: 5px;
+    height: 20px;
+    width: 150px;
+    text-align: center;
+    line-height: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 .beian{
     position: absolute;
@@ -434,12 +482,12 @@ footer{
 }
 .buttom_buttom{
     position: absolute;
-    top: 1460px;
+    top: 1400px;
     height: 30px;
     width: 100%;
     background-color: #33415e;
 }
-.buttom_buttom a:link{
+.buttom_buttom>a:link{
     margin: auto;
     bottom: 0;
     padding: 0;
@@ -453,4 +501,119 @@ footer{
     text-align: center;
     z-index: 999;
     line-height: 30px;
+}
+.buttom_buttom>a:hover{
+    color: #ffc9bb;
+}
+
+.zhengfu_gaikuang{
+
+
+}
+.zhengfu_gaikuang h1{
+  text-align: center;
+}
+.zhengfu_gaikuang p{
+    font-size: 15px;
+    text-indent: 30px;
+    width: 800px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    line-height: 30px;
+}
+
+   
+.image-slot{
+  color: #4FC3F7;
+  width: 100%;
+  text-align: center;
+}
+.item {
+   
+    margin-top: 55px;
+    margin-right: 40px;
+  } 
+  .bianminfuwu{
+      position: relative;
+  } 
+.bianminfuwu h1{
+    text-align: center;
+}
+.bianminfuwu p{
+    font-size: 15px;
+    text-indent: 30px;
+    width: 800px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    line-height: 30px;
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+.pingfen{
+    position: absolute;
+    right: 400px;
+    top: 0;
+
+}
+
+
+.tongxun_phone{
+    position: absolute;
+    width: 350px;
+    height: 700px;
+    left: 80px;
+    top: 50px;   
+}
+.tongxun_phone_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.tongxun_phone_head{
+    position: absolute;
+    margin: 0;
+    top: 40px;
+    left: 20px;
+    width: 310px;
+    height: 30px;
+    font-size: 14px;
+    z-index: 999;
+    border-bottom: 1px solid #616161;
+
+}
+.tongxun_phone_main{
+    position: absolute;
+    top: 75px;
+    width: 311px;
+    height: 550px;
+    left: 24px;
+   
+    z-index: 999;
+}
+.tongxun_phone_foot{
+    position: absolute;
+    bottom: 30px;
+    width: 310px;
+    height: 30px;
+    left: 20px;
+
+    z-index: 999;
+    margin: 0;
+}
+.tongxun_phone_main_info{
+    height: 25px;
+    font-size: 13px;
+   
+    line-height: 25px;
+    color: #455A64;
+    margin: 0;
+}
+.tongxun_phone_right{
+    position: absolute;
+    width: 350px;
+    height: 700px;
+    right: 80px;
+    top: 50px;  
 }
