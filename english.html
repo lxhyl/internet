@@ -14,7 +14,20 @@
 
     <link rel="stylesheet" href="./css/swiper.min.css">
 
-
+ <!-- 引入样式 -->
+ <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+ <!-- 引入组件库 -->
+ <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+ <style>
+    .el-image__inner {
+        position: absolute;
+        width: 500px;
+        height: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+</style>
 </head>
 
 <body>
@@ -25,10 +38,10 @@
             <img class="daohangImg" src="./img/daohangBgd.jpg">
             <div class="a_container">
                 <a href="#" @click.prevent="comName='shouye'">HOME</a>
-                <a href="#" @click.prevent="comName='lishi'">HISTORY</a>
-                <a href="#" @click.prevent="comName='fazhan'">DEVEROMENT</a>
-                <a href="#" @click.prevent="comName='zhuangkuang'">DATA</a>
-                <a href="#" @click.prevent="comName='yingyong'">APPLICATION</a>
+                <a href="#" @click.prevent="comName='zhengfu'">政府</a>
+                <a href="#" @click.prevent="comName='tongxun'">通讯</a>
+                <a href="#" @click.prevent="comName='wenyu'">文娱</a>
+                <a href="#" @click.prevent="comName='gouwu'">购物出行</a>
                 <a href="#" @click.prevent="comName='yingxiang'">INFLUENCE</a>
                 <a href="#" @click.prevent="comName='weilai'">PROSPECTIVE</a>
 
@@ -287,49 +300,362 @@
 
 
 
-    <template id="fazhan">
-        <h1>Basic situation</h1>
+    <!--政府组件-->
+    <template id="zhengfu">
+        <div>
+
+            <el-tabs tab-position="left">
+
+                <el-tab-pane label="概况">
+
+                    <div class="zhengfu_gaikuang">
+                        <h1>互联网+与政务服务</h1>
+                        <div style="font-size: 13px; position: absolute;right: 200px;">
+                            <span>2019-8-15</span> <span>作者:傅宇辉</span>
+                            <el-divider></el-divider>
+                        </div>
+                        </br> </br> </br> </br>
+                        <el-image style="width: 100%;height:300px;margin: 0 auto;" src="./zhengfuImg/图片1.png" fit="fill"
+                            lazy>
+                            <div slot="placeholder" class="image-slot">
+                                图片加载中<span class="dot">...</span>
+                            </div>
+                        </el-image>
+
+                        </br> </br> </br>
+                        <p>互联网+政务服务是继2015年提出“互联网+”概念后，李克强总理在2016年的《政府工作报告》中提出了“互联网+政务服务”。其内涵是实现部门间数据共享，让居民和企业少跑腿、好办事、不添堵。我国已进入互联网时代，各级政府部门要大力推行“互联网+政务”，发展政府大数据，加快构建整体政府、智慧政府、互联政府、透明政府、开放政府和服务型政府等新型政府，进一步提高政府管理和公共服务水平。
+                        </p>
+
+                        <el-image style="width: 100%;height:300px;margin: 0 auto;" src="./zhengfuImg/图片8.png" fit="fill"
+                            lazy>
+                            <div slot="placeholder" class="image-slot">
+                                图片加载中<span class="dot">...</span>
+                            </div>
+                        </el-image>
+                        </br>
+
+                        </br> </br>
+                        <p>
+                            从政府信息公开到政务公开，再到“互联网+政务服务”，政务公开对政务信息流通提出了更高的要求，在打造政府信息传播阵地的同时，也突破了“信息烟囱”“数据孤岛”等现象。以往只在部门之间流通的信息，如今必须在全平台流通；以往部门掌握的内部数据，如今必须在全领域共享。现在的政务公开平台已经不再是单纯的“消息集散地”，而是向着政务信息数据服务平台和便民服务平台的发展目标迈进。无论是政府网站的建设，还是政务新媒体的建设，都将实用性、服务性提升到了前所未有的高度，试图打造集信息公开、便民服务、互动交流、网上办事为一体的一网式公共服务平台。
+                        </p>
+                        </br>
+                        <zhengfu_table></zhengfu_table>
+
+                        </br></br>
+
+                        <el-divider>看完文章点个赞吧<i class="el-icon-mouse"></i></el-divider>
+                        <div>
+
+
+                            <el-badge :value="one_zan" :max="99" class="item">
+                                <el-button @click="add" size="small">给网页点个赞</el-button>
+                            </el-badge>
+
+                            <el-button onclick="share()" class="share-button"
+                                style="margin-top: 50px;position:absolute;right:200px;" icon="el-icon-share"
+                                type="primary">分享</el-button>
+                            <el-divider>评论下吧<i class="el-icon-mouse"></i></el-divider>
+                            <div style="margin-top:50px;margin-bottom:100px;">
+                                <pinglun></pinglun>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </el-tab-pane>
+
+                <el-tab-pane label="政务公开">
+                    <div class="zhengfu_gaikuang">
+                        <h1>政务公开</h1>
+
+                        <div style="font-size: 13px; position: absolute;right: 200px;">
+                            <span>2019-8-15</span> <span>作者:傅宇辉</span>
+                            <el-divider></el-divider>
+                        </div>
+                        </br> </br> </br>
+                        <el-image style="width: 100%;height:300px;margin: 0 auto;" src="./zhengfuImg/图片9.png" fit="fill"
+                            lazy>
+                            <div slot="placeholder" class="image-slot">
+                                图片加载中<span class="dot">...</span>
+                            </div>
+                        </el-image>
+                        </br> </br>
+                        <p>“互联网＋政务公开”简单地说就是政务服务也上网了，政务公开也是其中一种，这是利用现代化科技的方式，让政务服务能够跟上时代的步伐，也能够更好地服务群众，这样的一种服务方式不仅具有“加速度”，更能够让群众办事更省心、更便利。推进基层政务公开标准化规范化，旨在探索建立全国统一的政务公开标准体系，优化政务服务、提升政府效能。不少基层政府工作人员表示，互联网的出现，极大地推动了政务公开工作，提供了更多公开的“办法”，让基层政府部门与老百姓之间更好更方便地实现良性互动，让群众看得到、听得懂、能监督、好参与，实现政务公开真正利企便民。
+                        </p>
+
+
+                        </br>
+                        <el-image style="width: 100%;height:300px;margin: 0 auto;" src="./zhengfuImg/图片5.png" fit="fill"
+                            lazy>
+                            <div slot="placeholder" class="image-slot">
+                                图片加载中<span class="dot">...</span>
+                            </div>
+                        </el-image>
+                        </br> </br>
+                        <p>
+                            长期以来，由于认识程度有局限、人员配备不到位、公开流程标准不明晰等原因，基层公开效果受到很大限制。可以说，政务公开工作重点在基层，难点也在基层。
+
+                            让百姓满意，不是一句空话，有想法还得有办法。不少基层政府工作人员表示，互联网的出现，极大地推动了政务公开工作，提供了更多公开的“办法”，让基层政府部门与老百姓之间更好更方便地实现良性互动。
+                        </p>
+                        </br>
+                        <el-image style="width: 100%;height:300px;margin: 0 auto;" src="./zhengfuImg/图片2.png" fit="fill"
+                            lazy>
+                            <div slot="placeholder" class="image-slot">
+                                图片加载中<span class="dot">...</span>
+                            </div>
+                        </el-image>
+                        <el-divider>看完文章点个赞吧<i class="el-icon-mouse"></i></el-divider>
+                        <div style="height: 150px;">
+
+
+                            <el-badge :value="one_zan" :max="99" class="item">
+                                <el-button @click="add" size="small">给网页点个赞</el-button>
+                            </el-badge>
+                            <el-button onclick="share()" class="share-button"
+                                style="margin-top: 50px;position:absolute;right:200px;" icon="el-icon-share"
+                                type="primary">分享</el-button>
+                            <el-divider>评论下吧<i class="el-icon-mouse"></i></el-divider>
+
+
+                        </div>
+                        <div style="margin-top:50px;margin-bottom:100px;">
+                            <pinglun></pinglun>
+
+                        </div>
+
+                    </div>
+
+                </el-tab-pane>
+                <el-tab-pane label="便民服务">
+                    <div class="bianminfuwu">
+                        <h1>互联网便民服务</h1>
+
+                        <div style="font-size: 13px; position: absolute;right: 200px;">
+                            <span>2019-8-15</span> <span>作者:傅宇辉</span>
+                            <el-divider></el-divider>
+                        </div>
+
+                        </br> </br> </br>
+                        <el-image style="width:100%;;height:300px;margin: 0 auto;" src="./zhengfuImg/图片3.png"
+                            fit="fill">
+
+                        </el-image>
+                        </br>
+                        <p>便民服务是指推进实体政务大厅与网上服务平台融合发展，线上线下功能相辅相成的政务服务新模式：适应“互联网+政务服务”发展需要，进一步提升实体政务大厅服务能力，引入社会力量，加快与网上服务平台融合，积极利用第三方平台，开展预约查询、证照寄送，以及在线支付等服务；形成线上线下功能互补、相辅相成的政务服务新模式；依法有序开放网上政务服务资源和数据，鼓励公众、企业和社会机构开发利用，提供多样化、创新性的便民服务
+                        </p>
+                        </br>
+                        <el-image style="width:100%;height: 2096px;margin: 0 auto;" src="./zhengfuImg/图片4.png"
+                            fit="fill">
+                        </el-image>
+                        </br>
+                        <el-divider>看完文章点个赞吧<i class="el-icon-mouse"></i></el-divider>
+                        <div style="height: 150px;">
+
+                            <el-badge :value="one_zan" :max="99" class="item">
+                                <el-button @click="add" size="small">给网页点个赞</el-button>
+                            </el-badge>
+                            <el-button onclick="share()" class="share-button"
+                                style="margin-top: 50px;position:absolute;right:200px;" icon="el-icon-share"
+                                type="primary">分享</el-button>
+
+                        </div>
+                        <el-divider>评论下吧<i class="el-icon-mouse"></i></el-divider>
+                        <div style="margin-top:50px;margin-bottom:100px;">
+                            <pinglun></pinglun>
+
+                        </div>
+                    </div>
+                </el-tab-pane>
+                <el-tab-pane label="互联网政务">
+                    <div class="bianminfuwu">
+                        <h1>互联网政务</h1>
+
+                        <div style="font-size: 13px; position: absolute;right: 200px;">
+                            <span>2019-8-15</span> <span>作者:傅宇辉</span>
+                            <el-divider></el-divider>
+                        </div>
+
+                        </br> </br> </br>
+                        <el-image style="width:100%;;height:300px;margin: 0 auto;" src="./zhengfuImg/图片7.png"
+                            fit="fill">
+
+                        </el-image>
+                        </br></br>
+                        <p>互联网+政务的本质是指以政务服务平台为基础，以公共服务普惠化为主要内容，以实现智慧政府为目标，运用互联网技术、互联网思维与互联网精神，连接网络社会与现实社会，实现政府组织结构和办事流程的优化重组，构建集约化、高效化、透明化的政府治理与运行模式，向社会提供新模式、新境界、新治理结构下的管理和政务服务产品。互联网+政务服务呈现出在线化、云端化、移动化、数据活化、智能化、O2O化和自服务化7个特征。在线化主要解决政府的全方位服务；云端化主要是构建集群集约安全和高效的政府服务；移动化是为公众打造无所不在的掌上政府服务；数据活化主要是使数据流通到各个价值点，增强数据社会化应用的增值能力；智能化主要为公众提供简单、快捷、无技术与操作障碍的服务，实现了服务的普惠化；O2O化主要是实现线上线下服务的无缝对接；自服务化主要是满足公众自给自足的获取政务服务并推行众创众筹
+                        </p>
+                        </br>
+                        <el-image style="width:100%;height: 300px;margin: 0 auto;" src="./zhengfuImg/图片5.png"
+                            fit="fill">
+                        </el-image>
+                        </br>
+                        <el-divider>看完文章点个赞吧<i class="el-icon-mouse"></i></el-divider>
+                        <div style="height: 150px;">
+
+
+                            <el-badge :value="one_zan" :max="99" class="item">
+                                <el-button @click="add" size="small">给网页点个赞</el-button>
+                            </el-badge>
+                            <el-button onclick="share()" class="share-button"
+                                style="margin-top: 50px;position:absolute;right:200px;" icon="el-icon-share"
+                                type="primary">分享</el-button>
+
+                        </div>
+                        <el-divider>评论下吧<i class="el-icon-mouse"></i></el-divider>
+                        <div style="margin-top:50px;margin-bottom:100px;">
+                            <pinglun></pinglun>
+
+                        </div>
+                    </div>
+
+                </el-tab-pane>
+            </el-tabs>
+
+
+
+
+        </div>
     </template>
 
 
 
-    <template id="zhuangkuang">
-        <h1>Basic situation</h1>
+    <!--通讯组件-->
+    <template id="tongxun">
+        <div>
+            <el-popover placement="bottom" width="150" trigger="hover">
+                <p @click="drawer = true" style="font-size: 18px;">了解更多<i class="el-icon-right"></i></p>
+                <img slot="reference" src="./tongxunImg/1.png"
+                    style="z-index: -1;height:500px;width:600px;position:absolute;left: 0;right: 0;top:200px;margin:auto;">
+
+            </el-popover>
+
+            <el-popover placement="bottom" width="150" trigger="hover">
+                <p @click="drawer = true" style="font-size: 18px;" style="width: 150px;left:50%;">了解更多<i
+                        class="el-icon-right"></i></p>
+                <h2 slot="reference" style='top:50px;position:absolute;width: 100%;text-align: center;'>通讯——不止是发信息</h2>
+            </el-popover>
+
+            <el-drawer size="50%" title="互联网通信" :visible.sync="drawer" :direction="direction"
+                :before-close="handleClose">
+                <img src="./tongxunImg/图片1.png" style="width: 100%;height:40%;top: 0;margin: 0;">
+                <img src="./tongxunImg/图片2.png" style="width: 100%;height:40%;margin-bottom:20px;">
+            </el-drawer>
+
+            <el-tooltip class="item" effect="dark" hideAfter='4000' content="点击手机底部的输入框向Rone发送消息哦" placement="right">
+
+
+                <div class="tongxun_phone">
+                    <img class="tongxun_phone_img" src="./tongxunImg/phone.jpg">
+
+                    <p class="tongxun_phone_head"><i class="el-icon-back"></i><span>Rone</span><i
+                            style="right: 15px;position:absolute;" class="el-icon-more"></i></p>
+                
+                    <div class="tongxun_phone_main">
+                        <p class="tongxun_phone_main_info" v-for="item in person_one_list">
+                            <span style="color: #263238;">{{item.name}}:</span>
+                            {{item.info}}
+                        </p>
+                    </div>
+                    <p class="tongxun_phone_foot">
+                        <el-input v-model="person_one_input" maxlength="20" placeholder="请输入内容" size='mini'
+                            style="width: 250px;">
+                        </el-input>
+                        <el-button @click="sendmessageToRone" type="info" size="mini" style="width: 50px;margin:0;"
+                            round>发送
+                        </el-button>
+                    </p>
+                </div>
+            </el-tooltip>
+
+            <el-tooltip class="item" effect="dark" hideAfter='4000' content="点击手机底部的输入框向Jack发送消息哦" placement="left">
+
+
+                <div class="tongxun_phone_right">
+                    <img class="tongxun_phone_img" src="./tongxunImg/phone.jpg">
+
+                    <p class="tongxun_phone_head"><i class="el-icon-back"></i><span>Jack</span><i
+                            style="right: 15px;position:absolute;" class="el-icon-more"></i></p>
+                         
+                            <div class="tongxun_phone_main">
+                        <p class="tongxun_phone_main_info" v-for="item in person_one_list">
+                            <span style="color: #263238;">{{item.name}}:</span>
+                            {{item.info}}
+                        </p>
+                    </div>
+                    <p class="tongxun_phone_foot">
+                        <el-input v-model="person_one_input" maxlength="20" placeholder="请输入内容" size='mini'
+                            style="width: 250px;">
+                        </el-input>
+                        <el-button @click="sendmessageToJack" type="info" size="mini" style="width: 50px;" round>发送
+                        </el-button>
+                    </p>
+                </div>
+            </el-tooltip>
+
+
+
+        </div>
     </template>
 
 
-    <template id="yingyong">
-        <h1>application</h1>
+
+    <template id="wenyu">
+        <h1>文娱</h1>
+    </template>
+
+
+    <template id="gouwu">
+        <h1>购物出行</h1>
     </template>
 
 
     <template id="yingxiang">
-        <h1>influence</h1>
+        <h1>影响</h1>
     </template>
 
 
     <template id="weilai">
-        <h1>prospective</h1>
+        <h1>未来</h1>
     </template>
-    <footer>
-        <img class="footer_bgd" src="./img/footer_bgd.jpg">
-        <div class="footerAll">
-
-            <div class="callUs">
-
-                <span>Contact us</span>
-                <a href="mailto:3529725395@qq.com"><img class="callusimg" src="./img/mailUs.png"></a>
-                 
-            </div>
-           <div class="aboutUs"><a href="https://github.com/zpfnb/internet/blob/master/README.md" target="_blank">about us</a></div>
-          <div class="item_site"><img src="./img/footer_github.png"></img><a href="https://github.com/zpfnb/internet" target="_blank">Github</a></div>
+    <!--政府table组件-->
+    <template id="zhengfu_table">
+        <div>
+            <p style="width: 100%;text-align:center;">2018年全国城市互联网+排行</p>
+            <el-table :data="tableData" stripe style="width: 60%;left: 20%;">
+                <el-table-column prop="date" label="城市" width="180">
+                </el-table-column>
+                <el-table-column prop="name" label="省份" width="180">
+                </el-table-column>
+                <el-table-column prop="address" label="互联网+总指数">
+                </el-table-column>
+                <el-table-column prop="paiming" label="排名" width="180">
+                </el-table-column>
+            </el-table>
         </div>
+    </template>
+    <!--评论功能组件-->
+    <template id="pinglun">
+        <div>
+            <el-input style="width: 200px;" placeholder="评论人" suffix-icon="el-icon-user-solid" v-model="person">
+            </el-input>
+            <el-input style="width: 400px;" placeholder="评论内容" suffix-icon="el-icon-tickets" v-model="neirong">
+            </el-input>
+            <el-button type="primary" plain @click='addpinglun'>确定</el-button>
 
-    </footer>
-    <div class="buttom_buttom">
+            <el-table :data="list" stripe style="width: 100%">
 
-            <a class="beian" href="http://www.miitbeian.gov.cn" target="_blank">Gui ICP Prepared 18010807</a>
-    </div>
+                <el-table-column prop="person" label="评论人" width="200">
+                </el-table-column>
+                <el-table-column prop="neirong" label="评论内容">
+                </el-table-column>
+            </el-table>
+        </div>
+    </template>
+
+
+
     <!--引入js.js，swiper.js-->
     <script type="text/javascript" src="./js/js.js"></script>
     <script src="./js/swiper.min.js"></script>
@@ -360,6 +686,10 @@
                 prevEl: '.swiper-button-prev',
             },
         });
+
+        function share() {
+            alert('分享成功')
+        }
     </script>
 
 </body>
