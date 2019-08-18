@@ -9,7 +9,7 @@
 ## 项目简介
 随着中国经济的不断发展，互联网行业也紧跟世界潮流突飞猛进，窥一斑而知全豹，见证中国的进步。所以我们以互联网的发展，去展现中国的发展    
 ### 主要技术   
- >**前端：** html5,css3,javascript,Vue.js,swiper   
+ >**前端：** html5,css3,javascript,Vue.js,ElementUI,swiper   
     **后端：** Linux,nginx
 
   
