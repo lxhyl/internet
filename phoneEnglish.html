@@ -3,7 +3,7 @@
 
 <head>
     <link rel="shortcut icon" href="img/icon.ico" />
-    <title>中国互联网的发展</title>
+    <title>the deveronment of internet</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <script src="./js/vue.js"></script>
@@ -40,16 +40,16 @@
                    <span class="el-dropdown-link">
 
                    
-                       菜单 <i class="el-icon-arrow-down el-icon--right"></i>
+                       menu <i class="el-icon-arrow-down el-icon--right"></i>
                     </span>
                     <el-dropdown-menu slot="dropdown">
-                        <el-dropdown-item> <a href="#" @click.prevent="comName='shouye'">首页</a></el-dropdown-item>
-                        <el-dropdown-item> <a href="#" @click.prevent="comName='zhengfu'">政府</a></el-dropdown-item>
-                        <el-dropdown-item><a href="#" @click.prevent="comName='tongxun'">通讯</a></el-dropdown-item>
-                        <el-dropdown-item><a href="#" @click.prevent="comName='wenyu'">文娱</a></el-dropdown-item>
-                        <el-dropdown-item><a href="#" @click.prevent="comName='gouwu'">购物出行</a></el-dropdown-item>
-                        <el-dropdown-item> <a href="#" @click.prevent="comName='yingxiang'">影响</a></el-dropdown-item>
-                        <el-dropdown-item> <a href="#" @click.prevent="comName='weilai'">未来</a></el-dropdown-item>
+                        <el-dropdown-item> <a href="#" @click.prevent="comName='shouye'">HOME</a></el-dropdown-item>
+                        <el-dropdown-item> <a href="#" @click.prevent="comName='zhengfu'">GOVERNMENT</a></el-dropdown-item>
+                        <el-dropdown-item><a href="#" @click.prevent="comName='tongxun'">COMM</a></el-dropdown-item>
+                        <el-dropdown-item><a href="#" @click.prevent="comName='wenyu'">ENT</a></el-dropdown-item>
+                        <el-dropdown-item><a href="#" @click.prevent="comName='gouwu'">SHOPPING</a></el-dropdown-item>
+                        <el-dropdown-item> <a href="#" @click.prevent="comName='yingxiang'">INFLUENCE</a></el-dropdown-item>
+                        <el-dropdown-item> <a href="#" @click.prevent="comName='weilai'">PROSPECTIVE</a></el-dropdown-item>
                     </el-dropdown-menu>
                 </el-dropdown>
                 <!--
@@ -64,7 +64,7 @@
             </div>
 
             <select onchange="window.location=this.value;">
-                <option>语言</option>
+                <option>language</option>
                 <option value="phone.html"> 中文 </option>
                 <option style="border:none;" value="phoneEnglish.html"> English</option>
             </select>
@@ -92,27 +92,27 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <p>丰富多彩</p>
+                      
                         <img src="./img/slide6.png">
                     </div>
                     <div class="swiper-slide">
-                        <p><strong>高效</strong></p>
+                     
                         <img src="./img/slide2.jpg">
                     </div>
                     <div class="swiper-slide">
-                        <p>便捷</p>
+                      
                         <img src="./img/slide3.jpg">
                     </div>
                     <div class="swiper-slide">
-                        <p>便捷</p>
+                     
                         <img src="./img/slide4.png">
                     </div>
                     <div class="swiper-slide">
-                        <p>便捷</p>
+                       
                         <img src="./img/slide5.png">
                     </div>
                     <div class="swiper-slide">
-                        <p>便捷</p>
+                      
                         <img src="./img/slide1.jpg">
                     </div>
 
@@ -129,113 +129,122 @@
                 <img class="thingsBgd" src="./img/thingsBgd.png">
 
                -->
-               <h4 style=" border-bottom: #94874e solid 1px;width: 100%;">互联网大事记</h4>
+               <h4 style=" border-bottom: #94874e solid 1px;width: 100%;">Internet Events</h4>
                 <div class="thingsLeft">
                     <div @mouseenter="change1" @mouseleave="leave1" class="shouye_shijian_one">
                         <img class="left_img" src="./img/第一封邮件.jpg">
-                        <p class="left_alt">第一封邮件</p>
-                        <p class="left_title">电子邮件</p>
+                        <p class="left_alt">the first email</p>
+                        <p class="left_title">E-mail</p>
                         <p class="left_info">
-                            中国科学家在北京计算机应用技术研究所（ICA）建成一个电子邮件节点，
-                            用英文和德文向德国发出了中国第一封电子邮件。</p>
+                            Chinese scientists built an e-mail node at the Beijing Institute of Computer Applied Technology (ICA) 
+                            and sent the first e-mail to Germany in English and German.</p>
 
                     </div>
                     
                     <div @mouseenter="change1" @mouseleave="leave1" class="shouye_shijian_two">
                             <img class="left_img" src="./img/拨号上网.png">
-                            <p class="left_alt">拨号上网</p>
-                            <p class="left_title">拨号上网</p>
+                            <p class="left_alt">Dial-up Internet access</p>
+                            <p class="left_title">Dial-up Internet access</p>
                             <p class="left_info">
-                                使互联网从象牙塔走进百姓家的，是1994年4月20日中国实现了与国际互联网的第一条TCP/IP全功能链接。第二年一月，上海接入美国的64K专线，开始向社会提供互联网接入服务。
+                                It was on April 20, 1994 that China realized the first full-featured TCP/IP link with the Internet.The government take a  special lines to to provide Internet access services to the community.
                             </p>
     
                         </div>
                     <div @mouseenter="change2" @mouseleave="leave2" class="shouye_shijian_two">
                         <img class="left_img" src="./img/shijian_qq.jpg">
-                        <p class="left_alt">社交</p>
+                        <p class="left_alt">community</p>
                         <p class="left_title">QQ</p>
                         <p class="left_info">
-                            1999年，腾讯发布了QQ的第一版，当时还不叫QQ，叫OICQ。这是社交软件的兴起</p>
+                            In 1999, Tencent released the first version of QQ, which was not called QQ at that time, but OICQ. 
+                            This is the rise of social software.</p>
 
                     </div>
                     <div @mouseenter="change2" @mouseleave="leave2" class="shouye_shijian_two">
                             <img class="left_img" src="./img/baidu.jpg">
-                            <p class="left_alt">百度</p>
-                            <p class="left_title">搜索引擎</p>
+                            <p class="left_alt">Baidu</p>
+                            <p class="left_title">Search Engines</p>
                             <p class="left_info">
-                                百度，2000年1月由李彦宏创立于北京中关村，致力于向人们提供“简单，可依赖”的信息获取方式。目前是全球最大的中文搜索引擎。</p>
+                                Baidu, founded in January 2000 by Robin Li in Zhongguancun, Beijing, is committed to providing "simple, dependable" information access to people. 
+                            At present, it is the largest Chinese search engine in the world.</p>
     
                         </div>
                     <div @mouseenter="change3" @mouseleave="leave3" class="shouye_shijian_two">
                         <img class="left_img" src="./img/wangyou.jpg">
-                        <p class="left_alt">梦幻西游</p>
-                        <p class="left_title">游戏</p>
+                        <p class="left_alt">Fantasy Westward Journey</p>
+                        <p class="left_title">Game</p>
                         <p class="left_info">
-                            2000年之后，中国互联网进入了“网游时代”。网络游戏在一定程度上改变了中国人对互联网的认知。而中国网络游戏的兴起与繁荣，既是必然也有偶然。
+                            After 2000, China's Internet has entered the era of online games. From the earliest "King of kings", "Stone Age "to"legend",
+                            the rise prosperity of online games in China is both inevitable and accidental.
                         </p>
 
                     </div>
                     <div @mouseenter="change3" @mouseleave="leave3" class="shouye_shijian_two">
                             <img class="left_img" src="./img/taobao.jpg">
-                            <p class="left_alt">淘宝</p>
-                            <p class="left_title">购物</p>
+                            <p class="left_alt">Taobao</p>
+                            <p class="left_title">Shopping</p>
                             <p class="left_info">
-                                2003年5月10日，淘宝网诞生于浙江杭州的湖畔花园，2006年，淘宝网成为亚洲最大购物网站</p>
+                                On May 10, 2003, Taobao was born in the lakeside garden of Hangzhou, Zhejiang Province. 
+                            In 2006, Taobao became the largest shopping website in Asia.</p>
     
                         </div>
                     <div @mouseenter="change4" @mouseleave="leave4" class="shouye_shijian_two">
                         <img class="left_img" src="./img/xiongmao.jpg">
-                        <p class="left_alt">熊猫烧香</p>
-                        <p class="left_title">病毒</p>
+                        <p class="left_alt">Worm.nimaya</p>
+                        <p class="left_title">Virus</p>
                         <p class="left_info">
-                            最有名的“本土”病毒当属2006年10月爆发的蠕虫病毒“熊猫烧香”了。中毒之后，计算机主界面上会出现一个举着三根香的虔诚的熊猫。
+                            The most famous "native" virus is the worm virus "worm.nimaya" which broke out in October 2006.
+                             This virus  cause the system core program to fail to load, and delete important files to finally appear a panda with three incenses.
                         </p>
 
                     </div>
                     <div @mouseenter="change4" @mouseleave="leave4" class="shouye_shijian_two">
                             <img class="left_img" src="./img/weibo.jpg">
-                            <p class="left_alt">微博</p>
-                            <p class="left_title">微博</p>
+                            <p class="left_alt">Micro-blog</p>
+                            <p class="left_title">Micro-blog</p>
                             <p class="left_info">
-                                2009年下半年开始，各大门户网站开通或测试微博功能。自2009年8月上线以来，微博成为新浪最具想象力的新业务平台。新浪微博迅速成为社会化媒体平台一枝独秀的领跑者</p>
+                                Since the second half of 2009, major portals have opened or tested microblogging functions. 
+                                Since  Micrp-blog has become Sina's most imaginative new business platform.</p>
     
                         </div>
                     <div @mouseenter="change5" @mouseleave="leave5" class="shouye_shijian_two">
                         <img class="left_img" src="./img/qq.jpg">
-                        <p class="left_alt">通知</p>
-                        <p class="left_title">3Q大战</p>
+                        <p class="left_alt">Notice</p>
+                        <p class="left_title">"Star Wars" 3Q</p>
                         <p class="left_info">
-                            　腾讯进军互联网安全领域，与360之间的战争不可避免地爆发了。11月5日，工信部、互联网协会等部门紧急出面，用行政命令的方式要求双方立即结束纷争。
+                            　Tencent entered the field of Internet security, and the war between Tencent and 360 inevitably broke out.
+                              On November 5, the Ministry of Industry and Information Technology.
                         </p>
 
                     </div>
                     <div @mouseenter="change5" @mouseleave="leave5" class="shouye_shijian_two">
                             <img class="left_img" src="./img/didi.jpg">
-                            <p class="left_alt">滴滴打车</p>
-                            <p class="left_title">出行</p>
+                            <p class="left_alt">Drip trips</p>
+                            <p class="left_title">trip</p>
                             <p class="left_info">
-                                2014年上半年，“滴滴打车”和“快的打车”为了抢占市场，疯狂发放红包和补贴，仅仅4个月时间就烧掉了近24亿人民币。
+                                In the first half of 2014, "drip taxi" and "fast taxi" burned nearly 2.4 billion yuan in just four months in order to seize the market
+                                and frantically distribute red envelopes and subsidies. 
                             </p>
     
                         </div>
     
                     <div @mouseenter="change6" @mouseleave="leave6" class="shouye_shijian_two">
                         <img class="left_img" src="./img/share.jpg">
-                        <p class="left_alt">共享单车</p>
-                        <p class="left_title">共享经济</p>
+                        <p class="left_alt">Shared bicycle</p>
+                        <p class="left_title">shared economic</p>
                         <p class="left_info">
-                            真正让共享经济走进日常生活，成为资本宠儿的是2016年下半年开始兴起的共享单车。摩拜、ofo两强争霸，小蓝、小鸣、永安行诸强林立的局面。
+                            Shared bicycles, which started to emerge in the second half of 2016, have really brought the shared economy into daily life and become 
+                            the darling of capital.
                         </p>
 
                     </div>
                  
                     <div @mouseenter="change6" @mouseleave="leave6" class="shouye_shijian_two">
                         <img class="left_img" src="./img/cloud.jpg">
-                        <p class="left_alt">云计算</p>
-                        <p class="left_title">云计算</p>
+                        <p class="left_alt">Icloud Computing</p>
+                        <p class="left_title">Icloud Computing</p>
                         <p class="left_info">
-                            云计算
-                            是分布式计算的一种，指的是通过网络“云”将巨大的数据计算处理程序分解成无数个小程序，然后，通过多部服务器组成的系统进行处理和分析这些小程序得到结果并返回给用户。
+                            Icloud computing is a kind of distributed computing and  processed and analyzed by a system composed of 
+                             multiple servers to get the results and return them to users.
                         </p>
 
                     </div>
@@ -245,13 +254,13 @@
                 <img class="footer_bgd" src="./img/footer_bgd.jpg">
                 <p  style="font-size: 12px;color:#37474F;">
                     <span style="width:33%;text-align: center;" class="el-icon-message">
-                        <a href="mailto:3529725395@qq.com">联系我们</a>
+                        <a href="mailto:3529725395@qq.com">Contact Us</a>
                     </span>
                     <span style="width:33%;text-align: center;" class="el-icon-info">
-                       <a href="https://github.com/zpfnb/internet" target="_blank">关于我们</a>
+                       <a href="https://github.com/zpfnb/internet" target="_blank">more about</a>
                     </span>
                     <span style="width: 32%;text-align: center;" class="el-icon-view"> 
-                        <a href="https://github.com/zpfnb/internet" target="_blank">网站代码</a>
+                        <a href="https://github.com/zpfnb/internet" target="_blank">website code</a>
                     </span>
                 </p>
 
@@ -271,9 +280,9 @@
             <el-tabs tab-position="top">
 
                 <el-tab-pane>
-                    <span slot="label"><i class="el-icon-date"></i> 概况</span>
+                    <span slot="label"><i class="el-icon-date"></i> Survey</span>
                     <div class="zhengfu_gaikuang">
-                        <h1>互联网+与政务服务</h1>
+                        <h1>The Government With Internet</h1>
                         <div style="font-size: 13px; position: absolute;right: 50px;">
                             <span>2019-8-15</span> <span>作者:傅宇辉</span>
                             <el-divider></el-divider>
@@ -282,43 +291,43 @@
                         <el-image style="width: 100%;height:300px;margin: 0 auto;" src="./zhengfuImg/图片1.png" fit="fill"
                             lazy>
                             <div slot="placeholder" class="image-slot">
-                                图片加载中<span class="dot">...</span>
+                                waiting<span class="dot">...</span>
                             </div>
                         </el-image>
 
                         </br> </br> </br>
-                        <p>互联网+政务服务是继2015年提出“互联网+”概念后，李克强总理在2016年的《政府工作报告》中提出了“互联网+政务服务”。其内涵是实现部门间数据共享，让居民和企业少跑腿、好办事、不添堵。我国已进入互联网时代，各级政府部门要大力推行“互联网+政务”，发展政府大数据，加快构建整体政府、智慧政府、互联政府、透明政府、开放政府和服务型政府等新型政府，进一步提高政府管理和公共服务水平。
+                        <p>After the concept of "Internet plus" was put forward in 2015, Premier Li Keqiang put forward "Internet plus government service" in the government work report in 2016.It aim at data sharing.Government departments at all levels should vigorously promote "Internet plus government affairs" to improve public service.
                         </p>
 
                         <el-image style="width: 100%;height:300px;margin: 0 auto;" src="./zhengfuImg/图片8.png" fit="fill"
                             lazy>
                             <div slot="placeholder" class="image-slot">
-                                图片加载中<span class="dot">...</span>
+                                waiting<span class="dot">...</span>
                             </div>
                         </el-image>
                         </br>
 
                         </br> </br>
                         <p>
-                            从政府信息公开到政务公开，再到“互联网+政务服务”，政务公开对政务信息流通提出了更高的要求，在打造政府信息传播阵地的同时，也突破了“信息烟囱”“数据孤岛”等现象。以往只在部门之间流通的信息，如今必须在全平台流通；以往部门掌握的内部数据，如今必须在全领域共享。现在的政务公开平台已经不再是单纯的“消息集散地”，而是向着政务信息数据服务平台和便民服务平台的发展目标迈进。无论是政府网站的建设，还是政务新媒体的建设，都将实用性、服务性提升到了前所未有的高度，试图打造集信息公开、便民服务、互动交流、网上办事为一体的一网式公共服务平台。
+                            Internet plus government services has has also broken through the phenomena of "information chimneys" and "data islands". Nowadays, the open platform of government affairs towards the platform of government information and data service and the platform of convenient service for the people.  Whether it is the construction of government websites or the construction of new government media, the practicability and serviceability have been promoted to an unprecedented height, trying to build an new online service
                         </p>
                         </br>
                         <zhengfu_table></zhengfu_table>
 
                         </br></br>
 
-                        <el-divider>看完文章点个赞吧<i class="el-icon-mouse"></i></el-divider>
+                        <el-divider>approve<i class="el-icon-mouse"></i></el-divider>
                         <div>
 
 
                             <el-badge :value="one_zan" :max="99" class="item">
-                                <el-button @click="add" size="small">给网页点个赞</el-button>
+                                <el-button @click="add" size="small">approve the website</el-button>
                             </el-badge>
 
                             <el-button onclick="share()" class="share-button" size="small"
                                 style="margin-top: 10px;position:absolute;right:20px;" icon="el-icon-share"
-                                type="primary">分享</el-button>
-                            <el-divider>评论下吧<i class="el-icon-mouse"></i></el-divider>
+                                type="primary">share</el-button>
+                            <el-divider>comment<i class="el-icon-mouse"></i></el-divider>
                             <div style="margin-top:50px;margin-bottom:100px;">
                                 <pinglun></pinglun>
 
@@ -332,9 +341,9 @@
                 </el-tab-pane>
 
                 <el-tab-pane>
-                    <span slot="label"><i class="el-icon-s-opportunity"></i> 政务公开</span>
+                    <span slot="label"><i class="el-icon-s-opportunity"></i> Openness of Government Affairs</span>
                     <div class="zhengfu_gaikuang">
-                        <h1>政务公开</h1>
+                        <h1>Openness of Government Affairs</h1>
 
                         <div style="font-size: 13px; position: absolute;right: 20px;">
                             <span>2019-8-15</span> <span>作者:傅宇辉</span>
@@ -344,11 +353,11 @@
                         <el-image style="width: 100%;height:300px;margin: 0 auto;" src="./zhengfuImg/图片9.png" fit="fill"
                             lazy>
                             <div slot="placeholder" class="image-slot">
-                                图片加载中<span class="dot">...</span>
+                                waiting<span class="dot">...</span>
                             </div>
                         </el-image>
                         </br> </br>
-                        <p>“互联网＋政务公开”简单地说就是政务服务也上网了，政务公开也是其中一种，这是利用现代化科技的方式，让政务服务能够跟上时代的步伐，也能够更好地服务群众，这样的一种服务方式不仅具有“加速度”，更能够让群众办事更省心、更便利。推进基层政务公开标准化规范化，旨在探索建立全国统一的政务公开标准体系，优化政务服务、提升政府效能。不少基层政府工作人员表示，互联网的出现，极大地推动了政务公开工作，提供了更多公开的“办法”，让基层政府部门与老百姓之间更好更方便地实现良性互动，让群众看得到、听得懂、能监督、好参与，实现政务公开真正利企便民。
+                        <p>"Internet plus Open Government" is a way to use modern science and technology to serve the masses more conveniently. Promoting standardization and standardization of grass-roots government affairs openness aims at optimizing government services and improving government effectiveness. Many grass-roots government staff said that the emergence of the Internet has greatly promoted the work of government affairs publicity, providing more open "methods" to enable better and more convenient interaction between grass-roots government departments and the people.
                         </p>
 
 
@@ -356,33 +365,31 @@
                         <el-image style="width: 100%;height:300px;margin: 0 auto;" src="./zhengfuImg/图片5.png" fit="fill"
                             lazy>
                             <div slot="placeholder" class="image-slot">
-                                图片加载中<span class="dot">...</span>
+                                waiting<span class="dot">...</span>
                             </div>
                         </el-image>
                         </br> </br>
                         <p>
-                            长期以来，由于认识程度有局限、人员配备不到位、公开流程标准不明晰等原因，基层公开效果受到很大限制。可以说，政务公开工作重点在基层，难点也在基层。
-
-                            让百姓满意，不是一句空话，有想法还得有办法。不少基层政府工作人员表示，互联网的出现，极大地推动了政务公开工作，提供了更多公开的“办法”，让基层政府部门与老百姓之间更好更方便地实现良性互动。
+                            For a long time, the effect of grass-roots openness has been greatly limited due to unclear standards of open process and other reasons. It can be said that the work of government affairs publicity focuses on the grass-roots level, and the difficulties are also at the grass-roots level. Many grass-roots government staff said that the emergence of the Internet has greatly promoted the work of government affairs publicity.
                         </p>
                         </br>
                         <el-image style="width: 100%;height:300px;margin: 0 auto;" src="./zhengfuImg/图片2.png" fit="fill"
                             lazy>
                             <div slot="placeholder" class="image-slot">
-                                图片加载中<span class="dot">...</span>
+                                waiting<span class="dot">...</span>
                             </div>
                         </el-image>
-                        <el-divider>看完文章点个赞吧<i class="el-icon-mouse"></i></el-divider>
+                        <el-divider>approve<i class="el-icon-mouse"></i></el-divider>
                         <div >
 
 
                             <el-badge :value="one_zan" :max="99" class="item">
-                                <el-button @click="add" size="small">给网页点个赞</el-button>
+                                <el-button @click="add" size="small">approve the website</el-button>
                             </el-badge>
                             <el-button onclick="share()" class="share-button" size="small"
                                 style="margin-top: 10px;position:absolute;right:20px;" icon="el-icon-share"
-                                type="primary">分享</el-button>
-                            <el-divider>评论下吧<i class="el-icon-mouse"></i></el-divider>
+                                type="primary">share</el-button>
+                            <el-divider>comment<i class="el-icon-mouse"></i></el-divider>
                         </div>
                         <div style="margin-top:10px;margin-bottom:100px;">
                                 <pinglun></pinglun>
@@ -393,9 +400,9 @@
 
                 </el-tab-pane>
                 <el-tab-pane>
-                    <span slot="label"><i class="el-icon-s-check"></i> 便民服务</span>
+                    <span slot="label"><i class="el-icon-s-check"></i> Convince Services</span>
                     <div class="bianminfuwu">
-                        <h1>互联网便民服务</h1>
+                        <h1>Internet Convenicen Service</h1>
 
                         <div style="font-size: 13px; position: absolute;right: 20px;">
                             <span>2019-8-15</span> <span>作者:傅宇辉</span>
@@ -408,25 +415,25 @@
 
                         </el-image>
                         </br>
-                        <p>便民服务是指推进实体政务大厅与网上服务平台融合发展，线上线下功能相辅相成的政务服务新模式：适应“互联网+政务服务”发展需要，进一步提升实体政务大厅服务能力，引入社会力量，加快与网上服务平台融合，积极利用第三方平台，开展预约查询、证照寄送，以及在线支付等服务；形成线上线下功能互补、相辅相成的政务服务新模式；依法有序开放网上政务服务资源和数据，鼓励公众、企业和社会机构开发利用，提供多样化、创新性的便民服务
+                        <p>Convenient service refers to the integration and development of the entity government hall and the online service platform: to adapt to the development needs of "Internet + government services", further enhance the service capacity of the entity government hall, accelerate the formation of a new mode of government service that complements each other online and offline, and orderly opens the online government service resources in accordance with the law. Encouraging convenience services
                         </p>
                         </br>
                         <el-image style="width:100%;height: 2096px;margin: 0 auto;" src="./zhengfuImg/图片4.png"
                             fit="fill">
                         </el-image>
                         </br>
-                        <el-divider>看完文章点个赞吧<i class="el-icon-mouse"></i></el-divider>
+                        <el-divider>approve<i class="el-icon-mouse"></i></el-divider>
                         <div >
 
                             <el-badge :value="one_zan" :max="99" class="item">
-                                <el-button @click="add" size="small">给网页点个赞</el-button>
+                                <el-button @click="add" size="small">approve the website</el-button>
                             </el-badge>
                             <el-button onclick="share()" class="share-button" size="small"
                                 style="margin-top: 10px;position:absolute;right:20px;" icon="el-icon-share"
-                                type="primary">分享</el-button>
+                                type="primary">share</el-button>
 
                         </div>
-                        <el-divider>评论下吧<i class="el-icon-mouse"></i></el-divider>
+                        <el-divider>comment<i class="el-icon-mouse"></i></el-divider>
                         <div style="margin-top:10px;margin-bottom:100px;">
                             <pinglun></pinglun>
 
@@ -434,9 +441,9 @@
                     </div>
                 </el-tab-pane>
                 <el-tab-pane>
-                    <span slot="label"><i class="el-icon-monitor"></i> 互联网政务</span>
+                    <span slot="label"><i class="el-icon-monitor"></i> Government Internet Service</span>
                     <div class="bianminfuwu">
-                        <h1>互联网政务</h1>
+                        <h1>Government Internet Service</h1>
 
                         <div style="font-size: 13px; position: absolute;right: 20px;">
                             <span>2019-8-15</span> <span>作者:傅宇辉</span>
@@ -449,26 +456,26 @@
 
                         </el-image>
                         </br></br>
-                        <p>互联网+政务的本质是指以政务服务平台为基础，以公共服务普惠化为主要内容，以实现智慧政府为目标，运用互联网技术、互联网思维与互联网精神，连接网络社会与现实社会，实现政府组织结构和办事流程的优化重组，构建集约化、高效化、透明化的政府治理与运行模式，向社会提供新模式、新境界、新治理结构下的管理和政务服务产品。互联网+政务服务呈现出在线化、云端化、移动化、数据活化、智能化、O2O化和自服务化7个特征。在线化主要解决政府的全方位服务；云端化主要是构建集群集约安全和高效的政府服务；移动化是为公众打造无所不在的掌上政府服务；数据活化主要是使数据流通到各个价值点，增强数据社会化应用的增值能力；智能化主要为公众提供简单、快捷、无技术与操作障碍的服务，实现了服务的普惠化；O2O化主要是实现线上线下服务的无缝对接；自服务化主要是满足公众自给自足的获取政务服务并推行众创众筹
+                        <p>he essence of Internet + government affairs is to use the Internet to optimize the process of government organization and provide new management and government service products to the society. Internet + government services show 7 characteristics: online, cloud, mobile, data activation, intelligence, O2O and self service. Online mainly solves the government's omni-directional services; cloud-based mainly builds safe and efficient government services; mobile is to build real-time online government services for the public; data activation is mainly to enhance the value-added ability of data socialization applications; intellectualization is mainly to achieve universal service for the public; and O2 is mainly to build real-time online government services for the public. To achieve seamless docking of online and offline services; self-service is mainly to meet public access to government services
                         </p>
                         </br>
                         <el-image style="width:100%;height: 300px;margin: 0 auto;" src="./zhengfuImg/图片5.png"
                             fit="fill">
                         </el-image>
                         </br>
-                        <el-divider>看完文章点个赞吧<i class="el-icon-mouse"></i></el-divider>
+                        <el-divider>approve<i class="el-icon-mouse"></i></el-divider>
                         <div >
 
 
                             <el-badge :value="one_zan" :max="99" class="item">
-                                <el-button @click="add" size="small">给网页点个赞</el-button>
+                                <el-button @click="add" size="small">approve the website</el-button>
                             </el-badge>
                             <el-button onclick="share()" class="share-button" size="small"
                                 style="margin-top: 10px;position:absolute;right:20px;" icon="el-icon-share"
-                                type="primary">分享</el-button>
+                                type="primary">share</el-button>
 
                         </div>
-                        <el-divider>评论下吧<i class="el-icon-mouse"></i></el-divider>
+                        <el-divider>comment<i class="el-icon-mouse"></i></el-divider>
                         <div style="margin-top:10px;margin-bottom:100px;">
                             <pinglun></pinglun>
 
@@ -488,7 +495,7 @@
     <!--通讯组件-->
     <template id="tongxun">
         <div>
-            <el-tooltip class="item" effect="dark" hideAfter='4000' content="点击手机底部的输入框向Rone发送消息哦" placement="right">
+            <el-tooltip class="item" effect="dark" hideAfter='4000' content="Click on the bottom of the phone in Rone to send messages" placement="right">
                 
                 <div class="tongxun_phone">
                     <img class="tongxun_phone_img" src="./tongxunImg/phone.jpg">
@@ -503,17 +510,17 @@
                         </p>
                     </div>
                     <p class="tongxun_phone_foot">
-                        <el-input v-model="person_one_input" maxlength="20" placeholder="请输入内容" size='mini'
+                        <el-input v-model="person_one_input" maxlength="20" placeholder="Input Content" size='mini'
                             style="width: 250px;margin-left: 10px;">
                         </el-input>
                         <el-button @click="sendmessageToRone" type="info" size="mini" style="width: 50px;margin:0;"
-                            round>发送
+                            round>Send
                         </el-button>
                     </p>
                 </div>
             </el-tooltip>
 
-            <el-tooltip class="item" effect="dark" hideAfter='4000' content="点击手机底部的输入框向Jack发送消息哦" placement="left">
+            <el-tooltip class="item" effect="dark" hideAfter='4000' content="Click on the input box at the bottom of the phone to send messages to Jack" placement="left">
 
 
                 <div class="tongxun_phone_right">
@@ -529,10 +536,10 @@
                         </p>
                     </div>
                     <p class="tongxun_phone_foot">
-                        <el-input v-model="person_one_input" maxlength="20" placeholder="请输入内容" size='mini'
+                        <el-input v-model="person_one_input" maxlength="20" placeholder="Input Content" size='mini'
                             style="width: 250px;margin-left: 10px;">
                         </el-input>
-                        <el-button @click="sendmessageToJack" type="info" size="mini" style="width: 50px;right: 5%;" round>发送
+                        <el-button @click="sendmessageToJack" type="info" size="mini" style="width: 50px;right: 5%;" round>send
                         </el-button>
                     </p>
                 </div>
@@ -554,24 +561,24 @@
                     <img style="width: 60px;height:60px;border-radius: 100%;border:1px solid black;"
                         src="./wenyuImg/图片1.png">
                
-                <span style="line-height: 60px;height: 60px;position: absolute;top: 0;font-size: 19px;">互联网文娱</span>
+                <span style="line-height: 60px;height: 60px;position: absolute;top: 0;font-size: 19px;">Internet Entertainment</span>
 
             </p>
 
             <div style="width: 100%;position:absolute;left:0;right:0;margin:auto;top:100px;font-size: 14px;">
                 <p style="height: 80px;text-indent: 30px;line-height: 30px;">
-                    互联网文娱是由文学、影视、游戏、动漫、音乐、演出、衍生品等多元文化娱乐产业共同组成。依托互联网作为内容传播途径的泛娱乐内容服务构成了互联网文娱的内容领域。
-                    </br>以下软件你用过多少呢？来给他们打个分吧！
+                    Internet entertainment is composed of literature, film and television, games and other multi-cultural entertainment industries. Internet as a means of communication constitutes Entertainment
+                    </br>How many of the following software do you use? Come and score them！
                 </p>
                 <div class="card_container">
                     <div v-for="item in  all">
 
                         <el-card style="width: 90%;height:280px;margin-left: 5%;">
                             <img style="width: 310px;height: 200px;margin:0;" :src="item.Imgsrc">
-                            <span style="font-size:12px;">给</span>
+                            <span style="font-size:12px;">give</span>
                             <el-link type="primary" :href="item.src" target="_blank">{{ item.name }}</el-link>
 
-                            <span style="width: 50px;font-size:12px;">评个分吧:</span>
+                            <span style="width: 50px;font-size:12px;">Comment on the score:</span>
                             <el-rate v-model="item.pingfen" style="width: 200px;"></el-rate>
 
 
@@ -592,62 +599,62 @@
             <el-tabs tab-position="top">
                 <!--购物-->
                 <el-tab-pane>
-                    <span slot="label"><i class="el-icon-shopping-cart-2"></i> 购物</span>
+                    <span slot="label"><i class="el-icon-shopping-cart-2"></i> SHOPPING</span>
                     <div class="zhengfu_gaikuang">
-                        <h1>购物</h1>
+                        <h1>SHOPPING</h1>
                         <div style="font-size: 13px; position: absolute;right: 20px;">
                             <span>2019-8-15</span> <span>作者:傅宇辉</span>
                             <el-divider></el-divider>
                         </div>
                         </br> </br> </br>
-                        <p>随着电子商务的发展，由传统的实体经营再到现在我们所熟知的诸如淘宝、京东等网络营销企业。</p>
+                        <p>With the development of e-commerce, there are online marketing enterprises such as Taobao and Jingdong.</p>
                         </br>
                         <el-image style="width: 100%;height:300px;margin: 0 auto;" src="./gouwuImg/taobao.png"
                             fit="fill" lazy>
                             <div slot="placeholder" class="image-slot">
-                                图片加载中<span class="dot">...</span>
+                                waiting<span class="dot">...</span>
                             </div>
                         </el-image>
 
                         </br> </br> </br>
-                        <p>网购模式日趋成熟，并逐渐影响着人们的消费方式和理念，推动着社会经济的发展和财富的积累。现阶段，随着网络时代的来临，人们的生活发生了翻天覆地的变化，由以往相对较封闭单一的生活方式变得越来越多样化，网络信息技术的发展，同时也为经济社会的发展带来了生机与活力。将网络技术运用到经济发展方面，不仅改变了我国的经济发展方式，与此同时，也使得人们的生活水平跨上一个新的台阶，人们的购物方式也在逐渐的进行扩充。
+                        <p>The online shopping mode is becoming more and more mature, which gradually affects people's consumption mode and promotes the development of social economy and the accumulation of wealth. With the advent of the Internet age, people's life has become more and more diverse, but also brought vitality and vitality to the economy and society. The application of network technology to economic development has changed the way of economic development in our country, also made people better, and changed the way people shop.
                         </p>
 
                         <el-image style="width: 100%;height:300px;margin: 0 auto;" src="./gouwuImg/图片2.png" fit="fill"
                             lazy>
                             <div slot="placeholder" class="image-slot">
-                                图片加载中<span class="dot">...</span>
+                                waiting<span class="dot">...</span>
                             </div>
                         </el-image>
                         </br>
 
                         </br> </br>
                         <p>
-                            而另外一个方面，网购作为一种新兴的商业运作模式，因为其独特的购物方式以及其便捷快速、品种齐全、价格优惠的特点被消费者所喜爱，近几年来，我国的网络贸易总额也在不断攀升。
+                            On the other hand, as a new business operation mode, online shopping is loved by consumers because of its unique way of shopping and its convenience and speed. In recent years, the total amount of online trade in China is also rising
                         </p>
                         </br>
                         <el-image style="width: 100%;height:300px;margin: 0 auto;" src="./gouwuImg/3.jpg" fit="fill"
                             lazy>
                             <div slot="placeholder" class="image-slot">
-                                图片加载中<span class="dot">...</span>
+                                waiting<span class="dot">...</span>
                             </div>
                         </el-image>
 
                         </br></br>
 
-                        <el-divider>看完文章点个赞吧<i class="el-icon-mouse"></i></el-divider>
+                        <el-divider>approve<i class="el-icon-mouse"></i></el-divider>
                         <div>
 
 
                             <el-badge :value="two_zan" :max="99" class="item">
-                                <el-button @click="add" size="small">给网页点个赞</el-button>
+                                <el-button @click="add" size="small">approve the website</el-button>
                             </el-badge>
 
                             <el-button onclick="share()" class="share-button" size="small"
                                 style="margin-top: 10px;position:absolute;right:20px;" icon="el-icon-share"
-                                type="primary">分享</el-button>
+                                type="primary">share</el-button>
 
-                            <el-divider>评论下吧<i class="el-icon-mouse"></i></el-divider>
+                            <el-divider>comment<i class="el-icon-mouse"></i></el-divider>
                             <div style="margin-top:10px;margin-bottom:100px;">
                                 <pinglun></pinglun>
 
@@ -660,64 +667,63 @@
 
                 <!--出行-->
                 <el-tab-pane>
-                    <span slot="label"><i class="el-icon-bicycle"></i> 出行</span>
+                    <span slot="label"><i class="el-icon-bicycle"></i> Trips</span>
                     <div class="zhengfu_gaikuang">
-                        <h1>出行</h1>
+                        <h1>Trips</h1>
                         <div style="font-size: 13px; position: absolute;right: 20px;">
                             <span>2019-8-15</span> <span>作者:傅宇辉</span>
                             <el-divider></el-divider>
                         </div>
                         </br> </br> </br>
-                        <p>2017年，人工智能、科技爆炸、互联网的加速进步，智能科技带来的变革已经无孔不入，在出行领域，除了传统的公共交通工具和私家车外，共享出行和网约车成为新的出行潮流。</p>
+                        <p>In 2017, changes brought about by artificial intelligence and intelligent technology have been all-pervasive. In the field of travel, sharing travel and online car booking have become a new travel trend.</p>
                         </br>
                         <el-image style="width: 100%;height:300px;margin: 0 auto;" src="./gouwuImg/图片3.png" fit="fill"
                             lazy>
                             <div slot="placeholder" class="image-slot">
-                                图片加载中<span class="dot">...</span>
+                                waiting<span class="dot">...</span>
                             </div>
                         </el-image>
 
                         </br> </br> </br>
-                        <p>一线城市网民使用共享自行车APP比例最高
-                            　注：1.一线城市：北京、上海、广州、深圳；2.新一线城市：成都、杭州、武汉、重庆、南京、天津、苏州、西安、长沙、沈阳、青岛、郑州、大连、东莞、宁波3.二线城市：省会城市
-                            三线城市网民使用互联网约车最多
+                        <p>Shared bicycle APP has the highest proportion among Internet users in first-tier cities.
+                            Note: 1. First-tier cities: Beijing, Shanghai, Guangzhou and Shenzhen; 2. New-tier cities: Chengdu, Hangzhou, Wuhan, Chongqing, Nanjing, Tianjin, Suzhou, Xi'an, Changsha, Shenyang, Qingdao, Zhengzhou, Dalian, Dongguan and Ningbo. Second-tier cities: the third-tier cities of the provincial capital use the Internet most.
                         </p>
 
                         <el-image style="width: 100%;height:300px;margin: 0 auto;" src="./gouwuImg/图片4.png" fit="fill"
                             lazy>
                             <div slot="placeholder" class="image-slot">
-                                图片加载中<span class="dot">...</span>
+                               waiting<span class="dot">...</span>
                             </div>
                         </el-image>
                         </br>
 
                         </br> </br>
                         <p>
-                            公交车和私家车使用最多，共享自行车表现突出，新能源汽车和共享汽车使用较少
+                            Buses and private cars use the most, shared bicycles are outstanding, new energy vehicles and shared cars use less.
                         </p>
                         </br>
                         <el-image style="width: 100%;height:300px;margin: 0 auto;" src="./gouwuImg/图片5.png" fit="fill"
                             lazy>
                             <div slot="placeholder" class="image-slot">
-                                图片加载中<span class="dot">...</span>
+                               waiting<span class="dot">...</span>
                             </div>
                         </el-image>
-                        <p>一线城市网民选择共享自行车上班比例最高</p>
+                        <p>Netizens in first-tier cities choose to share bicycles to work in the highest proportion</p>
                         </br></br>
 
-                        <el-divider>看完文章点个赞吧<i class="el-icon-mouse"></i></el-divider>
+                        <el-divider>approve<i class="el-icon-mouse"></i></el-divider>
                         <div>
 
 
                             <el-badge :value="two_zan" :max="99" class="item">
-                                <el-button @click="add" size="small">给网页点个赞</el-button>
+                                <el-button @click="add" size="small">approve the website</el-button>
                             </el-badge>
 
                             <el-button onclick="share()" class="share-button" size="small"
                                 style="margin-top: 10px;position:absolute;right:20px;" icon="el-icon-share"
-                                type="primary">分享</el-button>
+                                type="primary">share</el-button>
 
-                            <el-divider>评论下吧<i class="el-icon-mouse"></i></el-divider>
+                            <el-divider>comment<i class="el-icon-mouse"></i></el-divider>
                             <div style="margin-top:10px;margin-bottom:100px;">
                                 <pinglun></pinglun>
 
@@ -734,27 +740,188 @@
 
 
     <!--影响组件-->
+  
     <template id="yingxiang">
-        <h1>影响</h1>
+        <div style="width: 100%;">
+            
+            <div style="width: 100%;position: absolute;margin:0;">
+
+
+                <el-collapse change="change" style="border-left: #409EFF 1px solid;" v-model="activeName" accordion>
+                    <el-collapse-item name="1">
+                        <template slot="title">
+                            <p> The Impact of Internet on Government<i class="header-icon el-icon-s-check"></i></p>
+                        </template>
+                        <div>
+
+                            <div style="font-size: 15px;">
+                                <p>1. With the Internet channel, the government can improve the quality and efficiency of management and service, and build a government serving the people.</p>
+                                <p> 2. Using the Internet platform, the government can better accept the supervision of the people, promote scientific and democratic decision-making and enhance the credibility of the government.</p>
+                                <p> 3. Through the national Internet system, it is conducive to the development of inter-governmental national cooperation, and to display a good national image.</p>
+                                <p>The Internet helps people to do practical things. Therefore, the network plays an important role in protecting people's rights. At the same time, the Internet also plays an important role in government supervision. Without the Internet, the government lacks supervision.</p>
+                            </div>
+
+                            <div style="height:500px;width: 100%;">
+                                <img src="./yingxiangImg/1.jpg" style="width: 100%;height:500px;">
+                               
+                            </div>
+                            <div style="height: 50px;">
+
+
+                                <el-badge :value="one_zan" :max="99" class="item">
+                                    <el-button @click="add" size="small">approve the website</el-button>
+                                </el-badge>
+                                <el-button onclick="share()" class="share-button" size="small"
+                                    style="margin-top: 10px;position:absolute;right:20px;" icon="el-icon-share"
+                                    type="primary">share</el-button>
+
+
+
+                            </div>
+                        </div>
+                    </el-collapse-item>
+                    <el-collapse-item name="2">
+                        <template slot="title">
+                            <p>The Impact of Internet on Enterprises<i class="header-icon el-icon-s-shop"></i></p>
+                        </template>
+                        <div style="font-size: 15px;">
+                            <p style="line-height: 30px;">
+                                The changes brought about by Internet technology are obvious to all. Firstly, on the marketing level, the former marketing relied on TV newspapers, and competition spread from regional competition to global competition. Competition is getting fiercer and fiercer
+                            </p>
+                            <p style="line-height: 30px;">
+                                Promote enterprise reform and innovation, and realize industry upgrading. Through the construction of the Internet Ecosystem, enterprises can effectively solve the Internet problems of enterprises, seize the opportunities brought by Internet +, and achieve new development.
+                            </p>
+                            <div style="height:500px;width: 100%;">
+
+
+                                <img src="./yingxiangImg/3.jpg" style="height: 500px;width:500px;">
+                               
+
+                            </div>
+                            <div style="height: 50px;">
+
+
+                                <el-badge :value="one_zan" :max="99" class="item">
+                                    <el-button @click="add" size="small">approve the website</el-button>
+                                </el-badge>
+                                <el-button onclick="share()" class="share-button" size="small"
+                                    style="margin-top: 10px;position:absolute;right:20px;" icon="el-icon-share"
+                                    type="primary">share</el-button>
+
+
+
+                            </div>
+                        </div>
+                    </el-collapse-item>
+                    <el-collapse-item name="3">
+                        <template slot="title">
+                            <p> The Impact of the Internet on Individuals<i class="header-icon el-icon-user-solid"></i></p>
+                        </template>
+                        <div style="font-size: 14px;">
+                            <p>1. The change of living habits leads people's shopping idea to PC terminal, while mobile Internet will turn people's shopping idea to mobile terminal.</p>
+                            <p>2. Information dissemination is more smoothly. Mobile Internet has liberated people's feet, and information on the Internet can be seen without sitting beside a computer. </p>
+                            <p>3. Have you ever waked up in the morning to watch news and weather on your mobile phone? Have you ever flipped through e-books, stocks, news on your mobile phone on the subway or bus, brushed micro-blogs, and watched live broadcasts of King's Glory?
+                            </p>
+                            <div>
+                                <img src="./yingxiangImg/5.jpg" style="width: 400px;height:500px;">
+                               
+                            </div>
+                            <div style="height: 50px;">
+
+
+                                <el-badge :value="one_zan" :max="99" class="item">
+                                    <el-button @click="add" size="small">approve the website</el-button>
+                                </el-badge>
+                                <el-button onclick="share()" class="share-button" size="small"
+                                    style="margin-top: 10px;position:absolute;right:20px;" icon="el-icon-share"
+                                    type="primary">share</el-button>
+
+
+
+                            </div>
+                        </div>
+                    </el-collapse-item>
+
+                </el-collapse>
+            </div>
+         
+        </div>
     </template>
 
     <!--未来组件-->
     <template id="weilai">
-        <h1>未来</h1>
+    
+        <div style="display: flex;flex-wrap:wrap ;width: 90%;left: 5%;position: absolute;">
+            <div class="weilai_img_container" @mouseenter="show1 = true" @mouseleave="show1 = false">
+               <img  src="./weilaiImg/3.png" style="height: 100%;width:100%;">               
+                <el-collapse-transition>
+                        <div v-show="show1"  style="height: 50px;top:50px;left:30px;position: absolute;z-index: 999;">
+                            <h5 style="font-size: 18px;">virtual reality</h5>
+                            <p style="font-size: 12px;">Experience the Real Feeling in the Virtual World</p>
+                        </div>
+                </el-collapse-transition>
+            </div>
+            <div class="weilai_img_container" @mouseenter="show2 = true" @mouseleave="show2 = false">
+                    <img  src="./weilaiImg/1.jpg" style="height: 100%;width:100%;">               
+                     <el-collapse-transition>
+                             <div v-show="show2"  style="height: 50px;top:270px;left:30px;position: absolute;z-index: 999;">
+                                 <h5 style="font-size: 18px;">Machine Learning</h5>
+                                 <p style="font-size: 12px;">Independence, Efficiency and Productivity</p>
+                             </div>
+                     </el-collapse-transition>
+            </div>
+            <div class="weilai_img_container" @mouseenter="show3 = true" @mouseleave="show3 = false">
+                    <img  src="./weilaiImg/2.jpg" style="height: 100%;width:100%;">               
+                     <el-collapse-transition>
+                             <div v-show="show3"  style="height: 50px;top:490px;left:30px;position: absolute;z-index: 999;">
+                                 <h5 style="font-size: 18px;">All things are interconnected</h5>
+                                 <p style="font-size: 12px;">Creating New Functions for Enterprises, Individuals and Countries</p>
+                             </div>
+                     </el-collapse-transition>
+            </div>
+            <div class="weilai_img_container" @mouseenter="show4 = true" @mouseleave="show4 = false">
+                    <img  src="./weilaiImg/3.jpg" style="height: 100%;width:100%;">               
+                     <el-collapse-transition>
+                             <div v-show="show4"  style="height: 50px;top:710px;left:30px;position: absolute;z-index: 999;">
+                                 <h5 style="font-size: 18px;">5G</h5>
+                                 <p style="font-size: 12px;">It's not just speed.</p>
+                             </div>
+                     </el-collapse-transition>
+            </div>
+            <div class="weilai_img_container" @mouseenter="show5 = true" @mouseleave="show5 = false">
+                    <img  src="./weilaiImg/4.jpg" style="height: 100%;width:100%;">               
+                     <el-collapse-transition>
+                             <div v-show="show5"  style="height: 50px;top:930px;left:30px;position: absolute;z-index: 999;">
+                                 <h5 style="font-size: 18px;">Artificial intelligence</h5>
+                                 <p style="font-size: 12px;">Intelligent Machine and Intelligent Life</p>
+                             </div>
+                     </el-collapse-transition>
+            </div>
+            <div class="weilai_img_container" @mouseenter="show6 = true" @mouseleave="show6 = false">
+                    <img  src="./weilaiImg/图片1.png" style="height: 100%;width:100%;">               
+                     <el-collapse-transition>
+                             <div v-show="show6"  style="height: 50px;top:1150px;left:30px;position: absolute;z-index: 999;">
+                                 <h5 style="font-size: 18px;">Mobile Office</h5>
+                                 <p style="font-size: 12px;">Leisure, Efficiency and Productivity</p>
+                             </div>
+                     </el-collapse-transition>
+            </div>
+           
+        </div>
     </template>
 
     <!--政府table组件-->
     <template id="zhengfu_table">
         <div>
-            <p style="width: 100%;text-align:center;">2018年全国城市互联网+排行</p>
+            <p style="width: 100%;text-align:center;">2018 urban Internet + ranking</p>
             <el-table :data="tableData" stripe style="width: 100%;">
-                <el-table-column prop="date" label="城市" width="75">
+                <el-table-column prop="date" label="City" width="75">
                 </el-table-column>
-                <el-table-column prop="name" label="省份" width="100">
+                <el-table-column prop="name" label="Province" width="100">
                 </el-table-column>
-                <el-table-column prop="address" label="互联网+总指数" width="100">
+                <el-table-column prop="address" label="Internet-Points" width="100">
                 </el-table-column>
-                <el-table-column prop="paiming" label="排名" width="100">
+                <el-table-column prop="paiming" label="Rank" width="100">
                 </el-table-column>
             </el-table>
         </div>
@@ -763,17 +930,17 @@
     <!--评论功能组件-->
     <template id="pinglun">
         <div >
-            <el-input style="width: 100px;margin-bottom: 10px;" placeholder="评论人" suffix-icon="el-icon-user-solid" v-model="person">
+            <el-input style="width: 100px;margin-bottom: 10px;" placeholder="commentor" suffix-icon="el-icon-user-solid" v-model="person">
             </el-input>
-            <el-input style="width: 300px;" placeholder="评论内容" suffix-icon="el-icon-tickets" v-model="neirong">
+            <el-input style="width: 300px;" placeholder="comment" suffix-icon="el-icon-tickets" v-model="neirong">
             </el-input>
-            <el-button type="primary" plain @click='addpinglun'>确定</el-button>
+            <el-button type="primary" plain @click='addpinglun'>sure</el-button>
 
             <el-table :data="list" stripe highlight-current-row style="width: 100%">
 
-                <el-table-column prop="person" label="评论人" width="100">
+                <el-table-column prop="person" label="commentor" width="100">
                 </el-table-column>
-                <el-table-column prop="neirong" label="评论内容">
+                <el-table-column prop="neirong" label="content">
                 </el-table-column>
             </el-table>
         </div>
@@ -811,7 +978,7 @@
         });
 
         function share() {
-            alert('分享成功')
+            alert('share successfully')
         }
     </script>
 </body>

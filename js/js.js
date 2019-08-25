@@ -215,7 +215,7 @@ Vue.component('wenyu', {
                 name: '爱奇艺',
                 pingfen: 0,
                 src: 'https://iqiyi.com',
-                Imgsrc: "http://img2.imgtn.bdimg.com/it/u=4130457039,2868869817&fm=26&gp=0.jpg"
+                Imgsrc: "http://img0.imgtn.bdimg.com/it/u=3589996579,3523600269&fm=26&gp=0.jpg"
             },
             {
                 name: '优酷',
