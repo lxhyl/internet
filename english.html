@@ -46,7 +46,7 @@
          </script>
     <div id="app">
         <div class="daohang">
-            <img class="logo" src="./img/logo.png">
+            <img class="logo" src="./img/logoEnglish.png">
             <img class="daohangImg" src="./img/daohangBgd.jpg">
             <div class="a_container">
                     <a href="#" @click.prevent="comName='shouye'">HOME</a>
@@ -122,7 +122,7 @@
 
             <div class="things">
 
-                <img class="thingsBgd" src="./img/thingsBgd.png">
+                <img class="thingsBgd" src="./img/englishBgd.jpg">
 
                 <div class="jindutiaoContainer">
 
@@ -981,6 +981,15 @@
                                      <p style="font-size: 24px;">Leisure, Efficiency and Productivity</p>
                                  </div>
                          </el-collapse-transition>
+                </div>
+                <div class="weilai_img_container" @mouseenter="show7 = true" @mouseleave="show7 = false">
+                    <img src="./weilaiImg/5.jpg" style="height: 100%;width:100%;">
+                    <el-collapse-transition>
+                        <div v-show="show7" style="height: 200px;top:4800px;left:100px;position: absolute;z-index: 999;">
+                            <h5 style="font-size: 35px;">Amazing China</h5>
+                            <p style="font-size: 24px;">Witness a More Prosperous You</p>
+                        </div>
+                    </el-collapse-transition>
                 </div>
                
             </div>

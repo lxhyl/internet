@@ -368,6 +368,7 @@ Vue.component('weilai', {
             show4:false,
             show5:false,
             show6:false,
+            show7:false,
             
 
         }

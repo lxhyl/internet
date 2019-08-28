@@ -906,6 +906,15 @@
                              </div>
                      </el-collapse-transition>
             </div>
+            <div class="weilai_img_container" @mouseenter="show7 = true" @mouseleave="show7 = false">
+                <img src="./weilaiImg/5.jpg" style="height: 100%;width:100%;">
+                <el-collapse-transition>
+                    <div v-show="show7" style="height: 50px;top:1370px;left:30px;position: absolute;z-index: 999;">
+                        <h5 style="font-size: 18px;">Amazing China</h5>
+                        <p style="font-size: 12px;">Witness a More Prosperous You</p>
+                    </div>
+                </el-collapse-transition>
+            </div>
            
         </div>
     </template>
