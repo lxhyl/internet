@@ -561,7 +561,7 @@
                     <img style="width: 60px;height:60px;border-radius: 100%;border:1px solid black;"
                         src="./wenyuImg/图片1.png">
                
-                <span style="line-height: 60px;height: 60px;position: absolute;top: 0;font-size: 19px;">Internet Entertainment</span>
+                <span style="line-height: 60px;height: 60px;position: absolute;top: 0;font-size: 19px;">Entertainment</span>
 
             </p>
 
@@ -573,12 +573,14 @@
                 <div class="card_container">
                     <div v-for="item in  all">
 
-                        <el-card style="width: 90%;height:280px;margin-left: 5%;">
-                            <img style="width: 310px;height: 200px;margin:0;" :src="item.Imgsrc">
+                        <el-card style="width: 90%;height:300px;margin:20px 5%;">
+                            <img style="width: 90%;height: 200px;margin:0;" :src="item.Imgsrc">
+<p>
                             <span style="font-size:12px;">give</span>
                             <el-link type="primary" :href="item.src" target="_blank">{{ item.name }}</el-link>
 
-                            <span style="width: 50px;font-size:12px;">Comment on the score:</span>
+                            <span style="font-size:12px;">Comment on the score:</span>
+                        </p>
                             <el-rate v-model="item.pingfen" style="width: 200px;"></el-rate>
 
 
